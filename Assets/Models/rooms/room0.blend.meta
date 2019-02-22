@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: bc1e01646133c7e45a3aba4c8db540f9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arcs
+    100002: Ceiling
+    100004: ceiling_wood
+    100006: Door
+    100008: Door_001
+    100010: Floor
+    100012: Lamps
+    100014: Plane
+    100016: //RootNode
+    100018: Building
+    100020: Ceiling_wood
+    100022: Logo
+    100024: Building_001
+    100026: Building_002
+    100028: Building_003
+    100030: Building_004
+    100032: Door_1
+    100034: Door_2
+    100036: Glass_1
+    100038: Glass_2
+    400000: Arcs
+    400002: Ceiling
+    400004: ceiling_wood
+    400006: Door
+    400008: Door_001
+    400010: Floor
+    400012: Lamps
+    400014: Plane
+    400016: //RootNode
+    400018: Building
+    400020: Ceiling_wood
+    400022: Logo
+    400024: Building_001
+    400026: Building_002
+    400028: Building_003
+    400030: Building_004
+    400032: Door_1
+    400034: Door_2
+    400036: Glass_1
+    400038: Glass_2
+    2100000: Metal
+    2100002: Material_002
+    2100004: Briks
+    2100006: Wood
+    2100008: Glass
+    2100010: Floor
+    2100012: Lamp
+    2100014: Metal_001
+    2100016: Bricks
+    2100018: Light
+    2300000: Arcs
+    2300002: Ceiling
+    2300004: ceiling_wood
+    2300006: Door
+    2300008: Door_001
+    2300010: Floor
+    2300012: Lamps
+    2300014: Plane
+    2300016: Building
+    2300018: Ceiling_wood
+    2300020: Logo
+    2300022: Building_001
+    2300024: Building_002
+    2300026: Building_003
+    2300028: Building_004
+    2300030: Door_1
+    2300032: Door_2
+    2300034: Glass_1
+    2300036: Glass_2
+    3300000: Arcs
+    3300002: Ceiling
+    3300004: ceiling_wood
+    3300006: Door
+    3300008: Door_001
+    3300010: Floor
+    3300012: Lamps
+    3300014: Plane
+    3300016: Building
+    3300018: Ceiling_wood
+    3300020: Logo
+    3300022: Building_001
+    3300024: Building_002
+    3300026: Building_003
+    3300028: Building_004
+    3300030: Door_1
+    3300032: Door_2
+    3300034: Glass_1
+    3300036: Glass_2
+    4300000: Plane
+    4300002: Door_001
+    4300004: ceiling_wood
+    4300006: Ceiling
+    4300008: Floor
+    4300010: Door
+    4300012: Lamps
+    4300014: Arcs
+    4300016: Logo
+    4300018: Building
+    4300020: Ceiling_wood
+    4300022: Building_002
+    4300024: Building_001
+    4300026: Building_004
+    4300028: Building_003
+    4300030: Glass_1
+    4300032: Glass_2
+    4300034: Door_2
+    4300036: Door_1
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
