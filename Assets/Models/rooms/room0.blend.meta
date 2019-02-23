@@ -23,6 +23,20 @@ ModelImporter:
     100034: Door_2
     100036: Glass_1
     100038: Glass_2
+    100040: Cylinder_000
+    100042: Cylinder_001
+    100044: Cylinder_002
+    100046: Cylinder_003
+    100048: Cylinder_004
+    100050: Cylinder_005
+    100052: Cylinder_006
+    100054: Cylinder_007
+    100056: Cylinder_008
+    100058: Cylinder_009
+    100060: Cylinder_010
+    100062: Cylinder_011
+    100064: Trees
+    100066: Shoadow_plane
     400000: Arcs
     400002: Ceiling
     400004: ceiling_wood
@@ -43,6 +57,20 @@ ModelImporter:
     400034: Door_2
     400036: Glass_1
     400038: Glass_2
+    400040: Cylinder_000
+    400042: Cylinder_001
+    400044: Cylinder_002
+    400046: Cylinder_003
+    400048: Cylinder_004
+    400050: Cylinder_005
+    400052: Cylinder_006
+    400054: Cylinder_007
+    400056: Cylinder_008
+    400058: Cylinder_009
+    400060: Cylinder_010
+    400062: Cylinder_011
+    400064: Trees
+    400066: Shoadow_plane
     2100000: Metal
     2100002: Material_002
     2100004: Briks
@@ -72,6 +100,20 @@ ModelImporter:
     2300032: Door_2
     2300034: Glass_1
     2300036: Glass_2
+    2300038: Cylinder_000
+    2300040: Cylinder_001
+    2300042: Cylinder_002
+    2300044: Cylinder_003
+    2300046: Cylinder_004
+    2300048: Cylinder_005
+    2300050: Cylinder_006
+    2300052: Cylinder_007
+    2300054: Cylinder_008
+    2300056: Cylinder_009
+    2300058: Cylinder_010
+    2300060: Cylinder_011
+    2300062: Trees
+    2300064: Shoadow_plane
     3300000: Arcs
     3300002: Ceiling
     3300004: ceiling_wood
@@ -91,6 +133,20 @@ ModelImporter:
     3300032: Door_2
     3300034: Glass_1
     3300036: Glass_2
+    3300038: Cylinder_000
+    3300040: Cylinder_001
+    3300042: Cylinder_002
+    3300044: Cylinder_003
+    3300046: Cylinder_004
+    3300048: Cylinder_005
+    3300050: Cylinder_006
+    3300052: Cylinder_007
+    3300054: Cylinder_008
+    3300056: Cylinder_009
+    3300058: Cylinder_010
+    3300060: Cylinder_011
+    3300062: Trees
+    3300064: Shoadow_plane
     4300000: Plane
     4300002: Door_001
     4300004: ceiling_wood
@@ -110,6 +166,20 @@ ModelImporter:
     4300032: Glass_2
     4300034: Door_2
     4300036: Door_1
+    4300038: Cylinder_011
+    4300040: Cylinder_010
+    4300042: Cylinder_009
+    4300044: Cylinder_007
+    4300046: Cylinder_004
+    4300048: Cylinder_003
+    4300050: Cylinder_002
+    4300052: Cylinder_001
+    4300054: Cylinder_000
+    4300056: Cylinder_005
+    4300058: Cylinder_006
+    4300060: Cylinder_008
+    4300062: Trees
+    4300064: Shoadow_plane
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
