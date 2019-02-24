@@ -149,9 +149,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 1799659614}
   - {fileID: 2009530255}
   - {fileID: 1033207909}
-  - {fileID: 1799659614}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &36817433
@@ -1975,15 +1975,15 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 758a9be0c103c994aa80094f8473c44c, type: 2}
     - target: {fileID: 400016, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2300030, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_Materials.Array.data[0]

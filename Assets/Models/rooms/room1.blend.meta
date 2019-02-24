@@ -6,23 +6,134 @@ ModelImporter:
     100000: //RootNode
     100002: Plane
     100004: Sphere
+    100006: Ceiling
+    100008: Door_1
+    100010: Door_2
+    100012: Easel
+    100014: Floor
+    100016: Painting
+    100018: Plant1
+    100020: Plant2
+    100022: Roof
+    100024: Table
+    100026: Wall
+    100028: Cube
+    100030: Pedestal
+    100032: Pedestal_001
+    100034: Pedestal_002
+    100036: Pedestal2
+    100038: Apple
+    100040: Banana
+    100042: Pear
     400000: //RootNode
     400002: Plane
     400004: Sphere
+    400006: Ceiling
+    400008: Door_1
+    400010: Door_2
+    400012: Easel
+    400014: Floor
+    400016: Painting
+    400018: Plant1
+    400020: Plant2
+    400022: Roof
+    400024: Table
+    400026: Wall
+    400028: Cube
+    400030: Pedestal
+    400032: Pedestal_001
+    400034: Pedestal_002
+    400036: Pedestal2
+    400038: Apple
+    400040: Banana
+    400042: Pear
     2100000: Material
     2100002: unnamed
     2100004: Organic
+    2100006: Wood
+    2100008: Glass
+    2100010: Leaf
+    2100012: Concrete
+    2100014: hijo-hombre__hijo-hombre_jpg
+    2100016: Wood__hijo-hombre_jpg
+    2100018: Fabric
+    2100020: Metal
+    2100022: Floor__Tiles_007_COLOR_jpg
+    2100024: Bricks__Terracotta_Tiles_002_Base_Color_jpg
+    2100026: Concrete__Granite_001_COLOR_jpg
+    2100028: Light
+    2100030: Granite__Granite_001_COLOR_jpg
+    2100032: Granite
+    2100034: Yellow
+    2100036: Red
     2300000: //RootNode
     2300002: Plane
     2300004: Sphere
+    2300006: Ceiling
+    2300008: Door_1
+    2300010: Door_2
+    2300012: Easel
+    2300014: Floor
+    2300016: Painting
+    2300018: Plant1
+    2300020: Plant2
+    2300022: Roof
+    2300024: Table
+    2300026: Wall
+    2300028: Cube
+    2300030: Pedestal
+    2300032: Pedestal_001
+    2300034: Pedestal_002
+    2300036: Pedestal2
+    2300038: Apple
+    2300040: Banana
+    2300042: Pear
     3300000: //RootNode
     3300002: Plane
     3300004: Sphere
+    3300006: Ceiling
+    3300008: Door_1
+    3300010: Door_2
+    3300012: Easel
+    3300014: Floor
+    3300016: Painting
+    3300018: Plant1
+    3300020: Plant2
+    3300022: Roof
+    3300024: Table
+    3300026: Wall
+    3300028: Cube
+    3300030: Pedestal
+    3300032: Pedestal_001
+    3300034: Pedestal_002
+    3300036: Pedestal2
+    3300038: Apple
+    3300040: Banana
+    3300042: Pear
     4300000: Cube
     4300002: Plane
     4300004: Sphere
+    4300006: Door_2
+    4300008: Door_1
+    4300010: Roof
+    4300012: Ceiling
+    4300014: Plant1
+    4300016: Plant2
+    4300018: Painting
+    4300020: Table
+    4300022: Floor
+    4300024: Wall
+    4300026: Easel
+    4300028: Pedestal
+    4300030: Pedestal_002
+    4300032: Pedestal_001
+    4300034: Pedestal2
+    4300036: Pear
+    4300038: Banana
+    4300040: Apple
     7400000: Default Take
     9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
