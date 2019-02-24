@@ -2510,6 +2510,7 @@ GameObject:
   - component: {fileID: 844549708}
   - component: {fileID: 844549707}
   - component: {fileID: 844549706}
+  - component: {fileID: 844549710}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -2597,8 +2598,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 28.522984, y: 1.5116869, z: 8.236726}
-  m_Center: {x: -0.051986694, y: -13.26325, z: 4.9844956}
+  m_Size: {x: 12.747862, y: 1.5116878, z: 8.236726}
+  m_Center: {x: 7.835578, y: -13.263248, z: 4.9844956}
 --- !u!65 &844549708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2623,6 +2624,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4868565, y: 28.605286, z: 8.236726}
   m_Center: {x: -13.57005, y: 0.28355122, z: 4.9844956}
+--- !u!65 &844549710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844549702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.796889, y: 1.5422673, z: 8.236728}
+  m_Center: {x: -7.915034, y: -13.24794, z: 4.984494}
 --- !u!1 &868105052
 GameObject:
   m_ObjectHideFlags: 0
@@ -6427,6 +6440,8 @@ GameObject:
   - component: {fileID: 2137057521}
   - component: {fileID: 2137057523}
   - component: {fileID: 2137057522}
+  - component: {fileID: 2137057525}
+  - component: {fileID: 2137057524}
   m_Layer: 0
   m_Name: Door_1
   m_TagString: Untagged
@@ -6492,3 +6507,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2137057520}
   m_Mesh: {fileID: 4300008, guid: 83a403fa18fe8df4bbeffcdf32e21b51, type: 3}
+--- !u!114 &2137057524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137057520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene_name: room0
+--- !u!65 &2137057525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2137057520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.511702, y: 0.89067674, z: 6.4756894}
+  m_Center: {x: 0, y: -13.758005, z: 4.304063}

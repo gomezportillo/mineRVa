@@ -149,8 +149,8 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
-  - {fileID: 1799659614}
   - {fileID: 2009530255}
+  - {fileID: 1799659614}
   - {fileID: 1033207909}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
@@ -2324,7 +2324,7 @@ GameObject:
   - component: {fileID: 756157854}
   m_Layer: 0
   m_Name: VRTKScripts
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5355,6 +5355,35 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2064711179}
   m_CullTransparentMesh: 0
+--- !u!1 &2068917860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100034, guid: bc1e01646133c7e45a3aba4c8db540f9,
+    type: 3}
+  m_PrefabInternal: {fileID: 582799683}
+--- !u!114 &2068917862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068917860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene_name: room1
+--- !u!65 &2068917863
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2068917860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.994193, y: 0.76735324, z: 6.435722}
+  m_Center: {x: 0.0022124648, y: 44.093327, z: 4.083994}
 --- !u!1 &2081798287
 GameObject:
   m_ObjectHideFlags: 0
