@@ -9,6 +9,8 @@ public class DoorCollider : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Creating door...");
+
     }
 
     void Update()
