@@ -1983,19 +1983,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_RootOrder
@@ -3728,7 +3728,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_BackGroundColor: {r: 0.25, g: 1, b: 0.84705883, a: 0.16078432}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}

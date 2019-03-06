@@ -15,6 +15,17 @@ ModelImporter:
     100018: Plane_009
     100020: Plane_010
     100022: Wall
+    100024: Base_vault
+    100026: chandelier
+    100028: Door
+    100030: Embellisher
+    100032: Ground
+    100034: Opus_magna
+    100036: Walls
+    100038: Walls_002
+    100040: Cube
+    100042: First_walls
+    100044: Shadow_cube
     400000: //RootNode
     400002: Plane
     400004: Plane_001
@@ -27,9 +38,29 @@ ModelImporter:
     400018: Plane_009
     400020: Plane_010
     400022: Wall
+    400024: Base_vault
+    400026: chandelier
+    400028: Door
+    400030: Embellisher
+    400032: Ground
+    400034: Opus_magna
+    400036: Walls
+    400038: Walls_002
+    400040: Cube
+    400042: First_walls
+    400044: Shadow_cube
     2100000: unnamed
     2100002: Stone
     2100004: Bricks_001__Terracotta_Tiles_002_Base_Color_jpg_001
+    2100006: chandelier
+    2100008: Wood
+    2100010: Marble__White_Marble_004_COLOR_jpg
+    2100012: Stone__Flooring_Stone_001_COLOR_png
+    2100014: Stone2__Flooring_Stone_001_COLOR_png
+    2100016: Stone_001
+    2100018: Tendones
+    2100020: Columns
+    2100022: Columnas
     2300000: Plane
     2300002: Plane_001
     2300004: Plane_002
@@ -41,6 +72,17 @@ ModelImporter:
     2300016: Plane_009
     2300018: Plane_010
     2300020: Wall
+    2300022: Base_vault
+    2300024: chandelier
+    2300026: Door
+    2300028: Embellisher
+    2300030: Ground
+    2300032: Opus_magna
+    2300034: Walls
+    2300036: Walls_002
+    2300038: Cube
+    2300040: First_walls
+    2300042: Shadow_cube
     3300000: Plane
     3300002: Plane_001
     3300004: Plane_002
@@ -52,6 +94,17 @@ ModelImporter:
     3300016: Plane_009
     3300018: Plane_010
     3300020: Wall
+    3300022: Base_vault
+    3300024: chandelier
+    3300026: Door
+    3300028: Embellisher
+    3300030: Ground
+    3300032: Opus_magna
+    3300034: Walls
+    3300036: Walls_002
+    3300038: Cube
+    3300040: First_walls
+    3300042: Shadow_cube
     4300000: Plane_010
     4300002: Plane_007
     4300004: Plane_006
@@ -63,6 +116,17 @@ ModelImporter:
     4300016: Wall
     4300018: Plane_002
     4300020: Plane_004
+    4300022: Walls_002
+    4300024: chandelier
+    4300026: Embellisher
+    4300028: Walls
+    4300030: Opus_magna
+    4300032: Door
+    4300034: Ground
+    4300036: Base_vault
+    4300038: Cube
+    4300040: Shadow_cube
+    4300042: First_walls
   externalObjects: {}
   materials:
     importMaterials: 1
