@@ -26,6 +26,12 @@ ModelImporter:
     100040: Cube
     100042: First_walls
     100044: Shadow_cube
+    100046: Opus_magna_001
+    100048: Descendimiento_cruz
+    100050: Door_shilouette
+    100052: Jardin_der
+    100054: Jardin_izq
+    100056: Matrimonio_arnolfini
     400000: //RootNode
     400002: Plane
     400004: Plane_001
@@ -49,6 +55,12 @@ ModelImporter:
     400040: Cube
     400042: First_walls
     400044: Shadow_cube
+    400046: Opus_magna_001
+    400048: Descendimiento_cruz
+    400050: Door_shilouette
+    400052: Jardin_der
+    400054: Jardin_izq
+    400056: Matrimonio_arnolfini
     2100000: unnamed
     2100002: Stone
     2100004: Bricks_001__Terracotta_Tiles_002_Base_Color_jpg_001
@@ -61,6 +73,16 @@ ModelImporter:
     2100018: Tendones
     2100020: Columns
     2100022: Columnas
+    2100024: matrimonio_arnolfini__matrimonio_arnolfini_jpg
+    2100026: Wood__matrimonio_arnolfini_jpg
+    2100028: descendimiento_cruz__descendimiento_cruz_jpg
+    2100030: Wood__descendimiento_cruz_jpg
+    2100032: jardin_delicias_der__jardin_delicias_der_jpg
+    2100034: Wood__jardin_delicias_der_jpg
+    2100036: jardin_delicias_izq__jardin_delicias_izq_jpg
+    2100038: Wood__jardin_delicias_izq_jpg
+    2100040: Wood_002
+    2100042: Crystal
     2300000: Plane
     2300002: Plane_001
     2300004: Plane_002
@@ -83,6 +105,12 @@ ModelImporter:
     2300038: Cube
     2300040: First_walls
     2300042: Shadow_cube
+    2300044: Opus_magna_001
+    2300046: Descendimiento_cruz
+    2300048: Door_shilouette
+    2300050: Jardin_der
+    2300052: Jardin_izq
+    2300054: Matrimonio_arnolfini
     3300000: Plane
     3300002: Plane_001
     3300004: Plane_002
@@ -105,6 +133,12 @@ ModelImporter:
     3300038: Cube
     3300040: First_walls
     3300042: Shadow_cube
+    3300044: Opus_magna_001
+    3300046: Descendimiento_cruz
+    3300048: Door_shilouette
+    3300050: Jardin_der
+    3300052: Jardin_izq
+    3300054: Matrimonio_arnolfini
     4300000: Plane_010
     4300002: Plane_007
     4300004: Plane_006
@@ -127,6 +161,12 @@ ModelImporter:
     4300038: Cube
     4300040: Shadow_cube
     4300042: First_walls
+    4300044: Opus_magna_001
+    4300046: Matrimonio_arnolfini
+    4300048: Descendimiento_cruz
+    4300050: Jardin_der
+    4300052: Jardin_izq
+    4300054: Door_shilouette
   externalObjects: {}
   materials:
     importMaterials: 1
