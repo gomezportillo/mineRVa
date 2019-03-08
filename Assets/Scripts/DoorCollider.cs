@@ -7,14 +7,7 @@ public class DoorCollider : MonoBehaviour
 {
     public string scene_name;
 
-    protected string base_scene_name = "Base_room";
-
     protected bool debug = true;
-
-    void Start()
-    {
-        MyLoadScene(base_scene_name, LoadSceneMode.Additive);
-    }
 
     void Update()
     {
@@ -41,7 +34,4 @@ public class DoorCollider : MonoBehaviour
             SceneManager.LoadScene(scene_name, mode);
         }
     }
-
-
-
 }
