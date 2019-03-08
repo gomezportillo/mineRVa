@@ -32,6 +32,8 @@ ModelImporter:
     100052: Jardin_der
     100054: Jardin_izq
     100056: Matrimonio_arnolfini
+    100058: Door_in
+    100060: Door_out
     400000: //RootNode
     400002: Plane
     400004: Plane_001
@@ -61,6 +63,8 @@ ModelImporter:
     400052: Jardin_der
     400054: Jardin_izq
     400056: Matrimonio_arnolfini
+    400058: Door_in
+    400060: Door_out
     2100000: unnamed
     2100002: Stone
     2100004: Bricks_001__Terracotta_Tiles_002_Base_Color_jpg_001
@@ -111,6 +115,8 @@ ModelImporter:
     2300050: Jardin_der
     2300052: Jardin_izq
     2300054: Matrimonio_arnolfini
+    2300056: Door_in
+    2300058: Door_out
     3300000: Plane
     3300002: Plane_001
     3300004: Plane_002
@@ -139,6 +145,8 @@ ModelImporter:
     3300050: Jardin_der
     3300052: Jardin_izq
     3300054: Matrimonio_arnolfini
+    3300056: Door_in
+    3300058: Door_out
     4300000: Plane_010
     4300002: Plane_007
     4300004: Plane_006
@@ -167,6 +175,8 @@ ModelImporter:
     4300050: Jardin_der
     4300052: Jardin_izq
     4300054: Door_shilouette
+    4300056: Door_out
+    4300058: Door_in
   externalObjects: {}
   materials:
     importMaterials: 1
