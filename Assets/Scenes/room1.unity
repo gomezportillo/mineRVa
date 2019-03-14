@@ -4804,12 +4804,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1404670568}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Room2
+  scene_name: 
 --- !u!65 &1404670573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4820,8 +4820,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.511702, y: 0.89067674, z: 6.4756894}
-  m_Center: {x: 0, y: 14.335925, z: 4.304063}
+  m_Size: {x: 3.511702, y: 1.0342672, z: 6.4756894}
+  m_Center: {x: 0, y: 14.26413, z: 4.304063}
 --- !u!1 &1473698242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5035,8 +5035,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.511702, y: 0.89067674, z: 6.4756894}
-  m_Center: {x: 0, y: 14.335925, z: 4.304063}
+  m_Size: {x: 3.511702, y: 1.0278409, z: 6.475689}
+  m_Center: {x: 0, y: 14.267343, z: 4.3040633}
 --- !u!23 &1490395505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5700,6 +5700,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84,
     type: 2}
   m_PrefabInternal: {fileID: 1994508797}
+--- !u!114 &1598129526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1598129519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b256669fe6bddcf428c738833a9383de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 1404670569}
+  apple: {fileID: 0}
 --- !u!1 &1638500133
 GameObject:
   m_ObjectHideFlags: 0
@@ -5907,7 +5920,7 @@ GameObject:
   - component: {fileID: 1672902540}
   - component: {fileID: 1672902542}
   m_Layer: 0
-  m_Name: Plant2
+  m_Name: Plant_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6077,7 +6090,7 @@ GameObject:
   - component: {fileID: 1729536326}
   - component: {fileID: 1729536328}
   m_Layer: 0
-  m_Name: Plant1
+  m_Name: Plant_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6648,6 +6661,10 @@ Prefab:
         type: 2}
       propertyPath: validHighlightColor.a
       value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010066341254, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}
+      propertyPath: m_Name
+      value: Apple_snap_drop_zone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 2}

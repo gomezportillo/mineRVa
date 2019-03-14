@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class DoorCollider : MonoBehaviour
 {
     public string scene_name;
+    private bool debug = true;
 
-    protected bool debug = true;
+    private bool collider_enabled = true;
 
     void Update()
     {
@@ -24,14 +25,26 @@ public class DoorCollider : MonoBehaviour
 
     private void MyLoadScene(string scene_name, LoadSceneMode mode)
     {
-        if (debug)
+        if (collider_enabled)
         {
-            Debug.Log(message: "Loading scene " + scene_name + " in mode " + mode);
+            if (scene_name != "" && !SceneManager.GetSceneByName(scene_name).isLoaded)
+            {
+                if (debug)
+                {
+                    Debug.Log(message: "Loading scene " + scene_name + " in mode " + mode);
+                }
+                SceneManager.LoadScene(scene_name, mode);
+            }
         }
+    }
 
-        if (scene_name != "" && !SceneManager.GetSceneByName(scene_name).isLoaded)
-        {
-            SceneManager.LoadScene(scene_name, mode);
-        }
+    public void Enable()
+    {
+        collider_enabled = true;
+    }
+    
+    public void Disable()
+    {
+        collider_enabled = false;
     }
 }
