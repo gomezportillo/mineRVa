@@ -7,6 +7,7 @@ public class AppleColliderDetector : MonoBehaviour
     public Transform door;
 
     private DoorCollider door_collider_script;
+    private readonly string TAG_NAME = "Apple";
 
     private void Awake()
     {
@@ -23,7 +24,7 @@ public class AppleColliderDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Apple")
+        if (other.tag == TAG_NAME)
         {
             Debug.Log("entered");
             door_collider_script.Enable();
@@ -32,7 +33,7 @@ public class AppleColliderDetector : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Apple")
+        if (other.tag == TAG_NAME)
         {
             Debug.Log("exit");
             door_collider_script.Disable();
