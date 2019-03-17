@@ -4804,12 +4804,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1404670568}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: 
+  scene_name: Room2
 --- !u!65 &1404670573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4820,8 +4820,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.511702, y: 1.0342672, z: 6.4756894}
-  m_Center: {x: 0, y: 14.26413, z: 4.304063}
+  m_Size: {x: 3.511702, y: 1.3669697, z: 6.4756894}
+  m_Center: {x: 0, y: 14.097778, z: 4.304063}
 --- !u!1 &1473698242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5712,7 +5712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1404670569}
-  apple: {fileID: 0}
 --- !u!1 &1638500133
 GameObject:
   m_ObjectHideFlags: 0
@@ -6882,7 +6881,7 @@ Transform:
   - {fileID: 844549703}
   - {fileID: 1598129524}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2026794889
 GameObject:
@@ -7147,7 +7146,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 6c0b9cdfff70ad944835d1e8e566266b, type: 2}
+  - {fileID: 2100000, guid: 737e12b1880a8284aa1981c407422002, type: 2}
   - {fileID: 2100000, guid: d86a274d004a3034e81be52690128a9e, type: 2}
   - {fileID: 2100000, guid: 758a9be0c103c994aa80094f8473c44c, type: 2}
   - {fileID: 2100000, guid: baf999b4b49adbb48938b7e41ecf5074, type: 2}
@@ -7482,7 +7481,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 60, y: 230, z: 0}
 --- !u!1 &2137057520
 GameObject:

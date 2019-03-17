@@ -2298,15 +2298,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 751721765}
-  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -0, w: 0}
-  m_LocalPosition: {x: -5.414, y: 1.511, z: -7.64}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
+  m_LocalPosition: {x: 3.4000018, y: 6.53, z: 13.535002}
+  m_LocalScale: {x: 7.500004, y: 7.5000043, z: 7.500006}
   m_Children:
   - {fileID: 250484105}
   - {fileID: 1278704539}
   - {fileID: 315501460}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1355175767}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: -90}
 --- !u!1 &775519001
 GameObject:
@@ -4116,6 +4116,7 @@ Transform:
   - {fileID: 1641157815}
   - {fileID: 871764045}
   - {fileID: 1694927111}
+  - {fileID: 751721766}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -4699,8 +4700,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 51.06795, y: 7.413054, z: 21.91315}
-  m_Center: {x: -1.6058184, y: -16.257889, z: 8.151084}
+  m_Size: {x: 51.06795, y: 6.8928847, z: 21.91315}
+  m_Center: {x: -1.6058184, y: -16.517984, z: 8.151084}
 --- !u!65 &1509260204
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6545,8 +6546,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 55.972645, y: 50.654697, z: 1.3969681}
-  m_Center: {x: 2.9624426, y: 4.4755387e-15, z: 0.31493804}
+  m_Size: {x: 80.035255, y: 72.54562, z: 7.101134}
+  m_Center: {x: 5.0801644, y: -1.412802, z: -2.158107}
 --- !u!23 &2027211267
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6614,7 +6615,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2037537431}
-  m_LocalRotation: {x: -0.0000002395711, y: -0.0000005508437, z: 0.000000029802319,
+  m_LocalRotation: {x: -0.00000018686596, y: -0.00000056126936, z: 0.00000005960463,
     w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -6641,8 +6642,8 @@ MonoBehaviour:
   - {fileID: 1994224604}
   controllable: {fileID: 2037537434}
   displayText: {fileID: 1351655951}
-  maxText: Abierto
-  minText: Cerrado
+  openText: Abierto
+  closedText: Cerrado
   door_left: {fileID: 678623122}
   door_right: {fileID: 1085366262}
   open_speed: 0.5

@@ -21,6 +21,10 @@ ModelImporter:
     100030: Escuela_atenas
     100032: Ultima_cena
     100034: Ceiling
+    100036: Oculo
+    100038: Oculo_aux
+    100040: creacion_adan
+    100042: Creacion_adan
     400000: Plane
     400002: Room1
     400004: //RootNode
@@ -39,6 +43,10 @@ ModelImporter:
     400030: Escuela_atenas
     400032: Ultima_cena
     400034: Ceiling
+    400036: Oculo
+    400038: Oculo_aux
+    400040: creacion_adan
+    400042: Creacion_adan
     2100000: Material
     2100002: Wood
     2100004: Crystal
@@ -64,6 +72,13 @@ ModelImporter:
     2100044: Wood__escuela_atenas_jpg
     2100046: ultima_cena__ultima_cena_jpg
     2100048: Wood__ultima_cena_jpg
+    2100050: Walls
+    2100052: Statue
+    2100054: Detalle
+    2100056: Zocalo
+    2100058: Zocalo__White_Marble_004_COLOR_jpg
+    2100060: creacion_adan__creacion_adan_jpg
+    2100062: Wood__creacion_adan_jpg
     2300000: Plane
     2300002: Room1
     2300004: Walls
@@ -81,6 +96,10 @@ ModelImporter:
     2300028: Escuela_atenas
     2300030: Ultima_cena
     2300032: Ceiling
+    2300034: Oculo
+    2300036: Oculo_aux
+    2300038: creacion_adan
+    2300040: Creacion_adan
     3300000: Plane
     3300002: Room1
     3300004: Walls
@@ -98,6 +117,10 @@ ModelImporter:
     3300028: Escuela_atenas
     3300030: Ultima_cena
     3300032: Ceiling
+    3300034: Oculo
+    3300036: Oculo_aux
+    3300038: creacion_adan
+    3300040: Creacion_adan
     4300000: Walls
     4300002: Plane
     4300004: Room1
@@ -115,6 +138,10 @@ ModelImporter:
     4300028: Escuela_atenas
     4300030: Ultima_cena
     4300032: Ceiling
+    4300034: Oculo
+    4300036: Oculo_aux
+    4300038: creacion_adan
+    4300040: Creacion_adan
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
