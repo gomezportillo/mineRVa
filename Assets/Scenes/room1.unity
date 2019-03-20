@@ -7225,6 +7225,8 @@ GameObject:
   - component: {fileID: 2052769275}
   - component: {fileID: 2052769277}
   - component: {fileID: 2052769276}
+  - component: {fileID: 2052769279}
+  - component: {fileID: 2052769278}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -7291,6 +7293,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2052769274}
   m_Mesh: {fileID: 4300018, guid: 83a403fa18fe8df4bbeffcdf32e21b51, type: 3}
+--- !u!114 &2052769278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2052769274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionFile: hijo_hombre.txt
+  rightControllerEvents: {fileID: 1014283109}
+  leftControllerEvents: {fileID: 1030478123}
+--- !u!135 &2052769279
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2052769274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6.5
+  m_Center: {x: 12.744955, y: 0.29976004, z: 5.2005515}
 --- !u!1 &2078086394
 GameObject:
   m_ObjectHideFlags: 0
