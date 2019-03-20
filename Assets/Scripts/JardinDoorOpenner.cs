@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 //REF. https://www.youtube.com/watch?v=6C4KfuW2q8Y
 
