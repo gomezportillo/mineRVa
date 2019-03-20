@@ -1435,7 +1435,7 @@ GameObject:
   - component: {fileID: 436038609}
   m_Layer: 0
   m_Name: RightHand_Aim
-  m_TagString: Untagged
+  m_TagString: Bow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2518,6 +2518,60 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 726399426}
   m_CullTransparentMesh: 0
+--- !u!1 &729218638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 729218639}
+  - component: {fileID: 729218641}
+  - component: {fileID: 729218640}
+  m_Layer: 0
+  m_Name: BowCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &729218639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729218638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1588548054}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &729218640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729218638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16, y: 16, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &729218641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 729218638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da8eb29322ceb3746983d19ca018aef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bow: {fileID: 20216968}
 --- !u!1 &741358959
 GameObject:
   m_ObjectHideFlags: 0
@@ -5608,7 +5662,7 @@ GameObject:
   - component: {fileID: 1304563487}
   m_Layer: 0
   m_Name: LeftHand_Aim
-  m_TagString: Untagged
+  m_TagString: Bow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7328,6 +7382,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1588548054 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: f659c33c0cb0e534d9989f496695ecc5,
+    type: 3}
+  m_PrefabInternal: {fileID: 1588548044}
 --- !u!1001 &1595880268
 Prefab:
   m_ObjectHideFlags: 0
@@ -7545,9 +7604,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
-  - {fileID: 1725831069}
   - {fileID: 1231943234}
   - {fileID: 181128306}
+  - {fileID: 1725831069}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &1627479227
@@ -7565,7 +7624,7 @@ Transform:
   - {fileID: 1691046551}
   - {fileID: 1714436618}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1634170277
 GameObject:
@@ -7987,16 +8046,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1688479821}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.82033, y: 1.9671278, z: 0.96973073}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.82033, y: 1.4071279, z: 0.96973073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1656890654}
   - {fileID: 20216968}
   - {fileID: 2009894069}
   - {fileID: 818713842}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 607616043}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1691046550
 GameObject:
@@ -9296,7 +9355,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 182108, guid: da23bdf76745c6c4f9258cd40e3d4859, type: 2}
       propertyPath: m_TagString
-      value: Arrow
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 179274, guid: da23bdf76745c6c4f9258cd40e3d4859, type: 2}
       propertyPath: m_TagString
