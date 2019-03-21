@@ -1,5 +1,6 @@
 ﻿using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 using VRTK;
 
 // <summary>
@@ -13,6 +14,9 @@ public class PaintingDescriptionManager : MonoBehaviour
     public string descriptionFile;
     public VRTK_ControllerEvents rightControllerEvents;
     public VRTK_ControllerEvents leftControllerEvents;
+    public GameObject AvailabilityIcon;
+    public GameObject TextBackground;
+    public Text TextObject;
 
     private readonly string BASE_PATH = "Assets/Painting_descriptions/";
     private readonly string TAG_NAME = "[BodyColliderContainer]";
@@ -22,7 +26,7 @@ public class PaintingDescriptionManager : MonoBehaviour
 
     private void Awake()
     {
-        // Reads the painting description and store on a variable
+        // Reads the painting description and storeS it on a variable
         string file_path = BASE_PATH + descriptionFile;
 
         if (System.IO.File.Exists(file_path))
@@ -35,6 +39,10 @@ public class PaintingDescriptionManager : MonoBehaviour
         {
             Debug.Log("File " + descriptionFile + " not found on " + BASE_PATH);
         }
+
+        // Hides the text canvas
+        AvailabilityIcon.SetActive(false);
+        TextBackground.SetActive(false);
     }
 
     // REF. // REF. https://www.youtube.com/watch?v=W9mub3CvTvQ
@@ -63,13 +71,14 @@ public class PaintingDescriptionManager : MonoBehaviour
     {
         if (player_near)
         {
-            Debug.Log(file_content);
+            TextObject.text = file_content;
+            TextBackground.SetActive(true);
         }
     }
 
     private void ControllerEvents_ButtonTwoReleased(object sender, ControllerInteractionEventArgs e)
     {
-        Debug.Log("Cleaning canvas...");
+        TextBackground.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -78,6 +87,7 @@ public class PaintingDescriptionManager : MonoBehaviour
         if (other.name.Contains(TAG_NAME))
         {
             player_near = true;
+            AvailabilityIcon.SetActive(true);
         }
     }
 
@@ -87,6 +97,8 @@ public class PaintingDescriptionManager : MonoBehaviour
         if (other.name.Contains(TAG_NAME))
         {
             player_near = false;
+            AvailabilityIcon.SetActive(false);
+            TextBackground.SetActive(false);
         }
     }
 }
