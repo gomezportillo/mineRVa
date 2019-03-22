@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using UnityEngine;
-using UnityEngine.UI;
 using VRTK;
+using TMPro;
 
 // <summary>
 // This script takes into account both if the player is near the painting and if
@@ -16,7 +16,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     public VRTK_ControllerEvents leftControllerEvents;
     public GameObject AvailabilityIcon;
     public GameObject TextBackground;
-    public Text TextObject;
+    public TextMeshProUGUI TextObject;
 
     private readonly string BASE_PATH = "Assets/Painting_descriptions/";
     private readonly string TAG_NAME = "[BodyColliderContainer]";
