@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class DoorCollider : MonoBehaviour
 {
     public string scene_name;
+    public float fadingTime = 10.0f;
+
     private bool debug = true;
 
     private bool collider_enabled = true;
@@ -27,11 +29,14 @@ public class DoorCollider : MonoBehaviour
         {
             if (scene_name != "" && !SceneManager.GetSceneByName(scene_name).isLoaded)
             {
-                if (debug)
+                if (mode == LoadSceneMode.Additive)
                 {
-                    Debug.Log(message: "Loading scene " + scene_name + " in mode " + mode);
+                    SceneManager.LoadScene(scene_name, mode);
                 }
-                SceneManager.LoadScene(scene_name, mode);
+                else
+                {
+                    Initiate.Fade(scene_name, Color.black, fadingTime);
+                }
             }
         }
     }
@@ -40,7 +45,7 @@ public class DoorCollider : MonoBehaviour
     {
         collider_enabled = true;
     }
-    
+
     public void Disable()
     {
         collider_enabled = false;
