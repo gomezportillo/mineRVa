@@ -4578,7 +4578,7 @@ GameObject:
   - component: {fileID: 1838652030}
   - component: {fileID: 1838652029}
   m_Layer: 0
-  m_Name: Door_3
+  m_Name: Door_2_black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4592,7 +4592,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1838652026}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 4.21}
+  m_LocalPosition: {x: 0, y: -0, z: 4.29}
   m_LocalScale: {x: 0.99999994, y: 1.0000005, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 582799684}
@@ -5234,6 +5234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene_name: Room1
+  fadingTime: 10
 --- !u!65 &2068917863
 BoxCollider:
   m_ObjectHideFlags: 0

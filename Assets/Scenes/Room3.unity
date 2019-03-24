@@ -3624,6 +3624,69 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &1239154988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100028, guid: 002da641889e20b4cbe49be34ba186cf,
+    type: 3}
+  m_PrefabInternal: {fileID: 1239154987}
+--- !u!1 &1239154989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100026, guid: 002da641889e20b4cbe49be34ba186cf,
+    type: 3}
+  m_PrefabInternal: {fileID: 1239154987}
+--- !u!1 &1239154990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100024, guid: 002da641889e20b4cbe49be34ba186cf,
+    type: 3}
+  m_PrefabInternal: {fileID: 1239154987}
+--- !u!65 &1239154991
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239154988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.1617193, y: 1.9560931, z: 10.25451}
+  m_Center: {x: 0, y: 54.439953, z: 3.426436}
+--- !u!114 &1239154992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239154989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene_name: Room4
+--- !u!65 &1239154993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239154989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.1617193, y: 1.9560969, z: 10.25451}
+  m_Center: {x: 0, y: 52.508125, z: 3.426435}
+--- !u!65 &1239154994
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1239154990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.1617193, y: 1.9560969, z: 10.25451}
+  m_Center: {x: 0, y: -15.377691, z: 3.426436}
 --- !u!1 &1248221920
 GameObject:
   m_ObjectHideFlags: 0
@@ -4394,9 +4457,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 74698686}
   - {fileID: 148663612}
   - {fileID: 491079808}
-  - {fileID: 74698686}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &1579146844
