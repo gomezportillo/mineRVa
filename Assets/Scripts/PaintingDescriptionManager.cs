@@ -18,7 +18,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     public GameObject TextBackground;
     public TextMeshProUGUI TextObject;
 
-    private readonly string BASE_PATH = "Assets/Painting_descriptions/";
+    private readonly string BASE_PATH = "Assets/Text/Painting_descriptions/";
     private readonly string TAG_NAME = "[BodyColliderContainer]";
 
     private string file_content;
@@ -26,6 +26,10 @@ public class PaintingDescriptionManager : MonoBehaviour
 
     private void Awake()
     {
+        // Hides the text canvas
+        AvailabilityIcon.SetActive(false);
+        TextBackground.SetActive(false);
+
         // Reads the painting description and storeS it on a variable
         string file_path = BASE_PATH + descriptionFile;
 
@@ -39,10 +43,6 @@ public class PaintingDescriptionManager : MonoBehaviour
         {
             Debug.Log("File " + descriptionFile + " not found on " + BASE_PATH);
         }
-
-        // Hides the text canvas
-        AvailabilityIcon.SetActive(false);
-        TextBackground.SetActive(false);
     }
 
     // REF. // REF. https://www.youtube.com/watch?v=W9mub3CvTvQ
