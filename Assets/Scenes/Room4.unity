@@ -7604,9 +7604,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 1725831069}
   - {fileID: 1231943234}
   - {fileID: 181128306}
-  - {fileID: 1725831069}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &1627479227
@@ -7978,7 +7978,7 @@ MonoBehaviour:
   fallRestriction: 0
   gravityFallYThreshold: 1
   blinkYThreshold: 0.15
-  floorHeightTolerance: 0.001
+  floorHeightTolerance: 2
   fallCheckPrecision: 5
   teleporter: {fileID: 0}
   customPlayAreaRigidbody: {fileID: 0}

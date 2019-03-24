@@ -21,7 +21,6 @@ public class PaintingDescriptionManager : MonoBehaviour
     private readonly string BASE_PATH = "Assets/Text/Painting_descriptions/";
     private readonly string TAG_NAME = "[BodyColliderContainer]";
 
-    private string file_content;
     private bool player_near = false;
 
     private void Awake()
@@ -36,7 +35,7 @@ public class PaintingDescriptionManager : MonoBehaviour
         if (System.IO.File.Exists(file_path))
         {
             StreamReader reader = new StreamReader(file_path);
-            file_content = reader.ReadToEnd();
+            TextObject.text = reader.ReadToEnd();
             reader.Close();
         }
         else
@@ -71,7 +70,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     {
         if (player_near)
         {
-            TextObject.text = file_content;
+            AvailabilityIcon.SetActive(false);
             TextBackground.SetActive(true);
         }
     }
@@ -79,6 +78,10 @@ public class PaintingDescriptionManager : MonoBehaviour
     private void ControllerEvents_ButtonTwoReleased(object sender, ControllerInteractionEventArgs e)
     {
         TextBackground.SetActive(false);
+        if (player_near)
+        {
+            AvailabilityIcon.SetActive(true);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

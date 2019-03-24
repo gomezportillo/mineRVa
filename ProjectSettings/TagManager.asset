@@ -4,9 +4,18 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Apple
-  - Arrow
-  - Bow
+  - ExcludeTeleport
+  - Cubes
+  - Spheres
+  - Saucers
+  - OtherSaucers
+  - Torso
+  - Arm
+  - Leg
+  - SnapCube
+  - SnapCylinder
+  - SnapSaucer
+  - Head
   layers:
   - Default
   - TransparentFX

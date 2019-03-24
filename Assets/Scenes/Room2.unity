@@ -2663,6 +2663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene_name: Room3
+  fadingTime: 10
 --- !u!1 &1074806716
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,9 +2915,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 438494867}
   - {fileID: 1114497403}
   - {fileID: 1202331523}
-  - {fileID: 438494867}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &1113535793
@@ -6194,6 +6195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene_name: Room1
+  fadingTime: 10
 --- !u!65 &1816433377
 BoxCollider:
   m_ObjectHideFlags: 0
