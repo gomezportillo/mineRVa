@@ -25,6 +25,12 @@ ModelImporter:
     100038: Oculo_aux
     100040: creacion_adan
     100042: Creacion_adan
+    100044: Coffe
+    100046: Plane_001
+    100048: Sh001
+    100050: Soda_Bottle
+    100052: Soda_can
+    100054: Cloth
     400000: Plane
     400002: Room1
     400004: //RootNode
@@ -47,6 +53,12 @@ ModelImporter:
     400038: Oculo_aux
     400040: creacion_adan
     400042: Creacion_adan
+    400044: Coffe
+    400046: Plane_001
+    400048: Sh001
+    400050: Soda_Bottle
+    400052: Soda_can
+    400054: Cloth
     2100000: Material
     2100002: Wood
     2100004: Crystal
@@ -79,6 +91,13 @@ ModelImporter:
     2100058: Zocalo__White_Marble_004_COLOR_jpg
     2100060: creacion_adan__creacion_adan_jpg
     2100062: Wood__creacion_adan_jpg
+    2100064: Metal__14025_Soda_Can_diff_jpg
+    2100066: 14025_Soda_Can__14025_Soda_Can_diff_jpg
+    2100068: 14026_Soda_Bottle_label_cap__14026_Soda_Bottle_diff_jpg
+    2100070: 14026_Soda_Bottle_bootle
+    2100072: Papel
+    2100074: Carton
+    2100076: Tapa
     2300000: Plane
     2300002: Room1
     2300004: Walls
@@ -100,6 +119,11 @@ ModelImporter:
     2300036: Oculo_aux
     2300038: creacion_adan
     2300040: Creacion_adan
+    2300042: Coffe
+    2300044: Plane_001
+    2300046: Soda_Bottle
+    2300048: Soda_can
+    2300050: Cloth
     3300000: Plane
     3300002: Room1
     3300004: Walls
@@ -121,6 +145,11 @@ ModelImporter:
     3300036: Oculo_aux
     3300038: creacion_adan
     3300040: Creacion_adan
+    3300042: Coffe
+    3300044: Plane_001
+    3300046: Soda_Bottle
+    3300048: Soda_can
+    3300050: Cloth
     4300000: Walls
     4300002: Plane
     4300004: Room1
@@ -142,6 +171,11 @@ ModelImporter:
     4300036: Oculo_aux
     4300038: creacion_adan
     4300040: Creacion_adan
+    4300042: Soda_can
+    4300044: Soda_Bottle
+    4300046: Coffe
+    4300048: Plane_001
+    4300050: Cloth
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
