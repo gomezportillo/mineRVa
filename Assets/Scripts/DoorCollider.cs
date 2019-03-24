@@ -29,14 +29,7 @@ public class DoorCollider : MonoBehaviour
         {
             if (scene_name != "" && !SceneManager.GetSceneByName(scene_name).isLoaded)
             {
-                if (mode == LoadSceneMode.Additive)
-                {
-                    SceneManager.LoadScene(scene_name, mode);
-                }
-                else
-                {
-                    Initiate.Fade(scene_name, Color.black, fadingTime);
-                }
+                SceneManager.LoadScene(scene_name, mode);
             }
         }
     }
