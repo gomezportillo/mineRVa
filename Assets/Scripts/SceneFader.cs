@@ -16,7 +16,7 @@ public class SceneFader : MonoBehaviour
 
     private bool finished = false;
 
-    private State State = State.FadingFromBlack;
+    //private State State = State.FadingFromBlack;
 
     void Start()
     {

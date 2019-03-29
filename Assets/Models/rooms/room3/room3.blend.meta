@@ -31,6 +31,7 @@ ModelImporter:
     100050: Soda_Bottle
     100052: Soda_can
     100054: Cloth
+    100056: Trash_can
     400000: Plane
     400002: Room1
     400004: //RootNode
@@ -59,6 +60,7 @@ ModelImporter:
     400050: Soda_Bottle
     400052: Soda_can
     400054: Cloth
+    400056: Trash_can
     2100000: Material
     2100002: Wood
     2100004: Crystal
@@ -98,6 +100,8 @@ ModelImporter:
     2100072: Papel
     2100074: Carton
     2100076: Tapa
+    2100078: Trash
+    2100080: Metal
     2300000: Plane
     2300002: Room1
     2300004: Walls
@@ -124,6 +128,7 @@ ModelImporter:
     2300046: Soda_Bottle
     2300048: Soda_can
     2300050: Cloth
+    2300052: Trash_can
     3300000: Plane
     3300002: Room1
     3300004: Walls
@@ -150,6 +155,7 @@ ModelImporter:
     3300046: Soda_Bottle
     3300048: Soda_can
     3300050: Cloth
+    3300052: Trash_can
     4300000: Walls
     4300002: Plane
     4300004: Room1
@@ -176,6 +182,7 @@ ModelImporter:
     4300046: Coffe
     4300048: Plane_001
     4300050: Cloth
+    4300052: Trash_can
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
@@ -213,6 +220,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -237,6 +245,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

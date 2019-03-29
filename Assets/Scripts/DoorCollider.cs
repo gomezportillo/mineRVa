@@ -6,8 +6,6 @@ public class DoorCollider : MonoBehaviour
     public string scene_name;
     public float fadingTime = 10.0f;
 
-    private bool debug = true;
-
     private bool collider_enabled = true;
 
     void Update()
