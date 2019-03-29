@@ -41,3 +41,7 @@ Assets/StreamingAssets/crashlytics-build.properties
 
 *.blend1
 *.blend1.meta
+
+Logs/
+Assets/_TerrainAutoUpgrade/
+Assets/_TerrainAutoUpgrade.meta

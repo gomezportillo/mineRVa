@@ -16,6 +16,8 @@ TagManager:
   - SnapCylinder
   - SnapSaucer
   - Head
+  - Apple
+  - Trash
   layers:
   - Default
   - TransparentFX
