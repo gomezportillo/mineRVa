@@ -18,6 +18,9 @@ TagManager:
   - Head
   - Apple
   - Trash
+  - Bow
+  - Arrow
+  - Ground
   layers:
   - Default
   - TransparentFX
