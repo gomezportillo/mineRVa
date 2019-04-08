@@ -11,6 +11,16 @@ ModelImporter:
     100010: Cylinder_006
     100012: Quiver
     100014: Arrow
+    100016: Door_in
+    100018: Door_in_black
+    100020: Door_out
+    100022: Door_out_black
+    100024: F_B_BQ_base
+    100026: Plane_001
+    100028: Table1
+    100030: Table2
+    100032: Table_000
+    100034: Table
     400000: //RootNode
     400002: Cube
     400004: Plane
@@ -19,6 +29,16 @@ ModelImporter:
     400010: Cylinder_006
     400012: Quiver
     400014: Arrow
+    400016: Door_in
+    400018: Door_in_black
+    400020: Door_out
+    400022: Door_out_black
+    400024: F_B_BQ_base
+    400026: Plane_001
+    400028: Table1
+    400030: Table2
+    400032: Table_000
+    400034: Table
     2100000: unnamed
     2100002: Sujecciones
     2100004: Hilo
@@ -29,6 +49,17 @@ ModelImporter:
     2100014: Feather
     2100016: Feather_001
     2100018: Wood_001
+    2100020: Wall
+    2100022: Glass
+    2100024: Table2
+    2100026: Ground__Chess_tiles_COLOR_jpg
+    2100028: Wood_002
+    2100030: Table1
+    2100032: Table
+    2100034: Gold_001
+    2100036: Gold
+    2100038: Velvet
+    2100040: Wall__Baroque_COL_jpg
     2300000: //RootNode
     2300002: Cube
     2300004: Plane
@@ -37,6 +68,16 @@ ModelImporter:
     2300010: Cylinder_006
     2300012: Quiver
     2300014: Arrow
+    2300016: Door_in
+    2300018: Door_in_black
+    2300020: Door_out
+    2300022: Door_out_black
+    2300024: F_B_BQ_base
+    2300026: Plane_001
+    2300028: Table1
+    2300030: Table2
+    2300032: Table_000
+    2300034: Table
     3300000: //RootNode
     3300002: Cube
     3300004: Plane
@@ -45,6 +86,16 @@ ModelImporter:
     3300010: Cylinder_006
     3300012: Quiver
     3300014: Arrow
+    3300016: Door_in
+    3300018: Door_in_black
+    3300020: Door_out
+    3300022: Door_out_black
+    3300024: F_B_BQ_base
+    3300026: Plane_001
+    3300028: Table1
+    3300030: Table2
+    3300032: Table_000
+    3300034: Table
     4300000: Plane
     4300002: Cube
     4300004: Arrow_head
@@ -52,6 +103,16 @@ ModelImporter:
     4300008: Cylinder_006
     4300010: Quiver
     4300012: Arrow
+    4300014: Door_out_black
+    4300016: Door_in_black
+    4300018: Door_in
+    4300020: Door_out
+    4300022: Plane_001
+    4300024: Table2
+    4300026: Table1
+    4300028: Table_000
+    4300030: F_B_BQ_base
+    4300032: Table
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
@@ -88,6 +149,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -112,6 +174,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
