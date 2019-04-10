@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System;
 
-enum State
+enum FaderState
 {
     FadingToBlack,
     FadingFromBlack

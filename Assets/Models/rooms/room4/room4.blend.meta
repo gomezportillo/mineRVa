@@ -21,6 +21,15 @@ ModelImporter:
     100030: Table2
     100032: Table_000
     100034: Table
+    100036: Bench_left
+    100038: Bench_right
+    100040: Ceiling
+    100042: guido-de-reni
+    100044: jose-de-ribera
+    100046: mattia-preti
+    100048: peter-paul-rubens
+    100050: Walls
+    100052: Ground
     400000: //RootNode
     400002: Cube
     400004: Plane
@@ -39,6 +48,15 @@ ModelImporter:
     400030: Table2
     400032: Table_000
     400034: Table
+    400036: Bench_left
+    400038: Bench_right
+    400040: Ceiling
+    400042: guido-de-reni
+    400044: jose-de-ribera
+    400046: mattia-preti
+    400048: peter-paul-rubens
+    400050: Walls
+    400052: Ground
     2100000: unnamed
     2100002: Sujecciones
     2100004: Hilo
@@ -60,6 +78,14 @@ ModelImporter:
     2100036: Gold
     2100038: Velvet
     2100040: Wall__Baroque_COL_jpg
+    2100042: peter-paul-rubens__peter-paul-rubens_jpg
+    2100044: Wood_002__peter-paul-rubens_jpg
+    2100046: mattia-preti__mattia-preti_jpg
+    2100048: Wood_002__mattia-preti_jpg
+    2100050: guido-de-reni__guido-de-reni_jpg
+    2100052: Wood_002__guido-de-reni_jpg
+    2100054: jose-de-ribera__jose-de-ribera_jpg
+    2100056: Wood_002__jose-de-ribera_jpg
     2300000: //RootNode
     2300002: Cube
     2300004: Plane
@@ -78,6 +104,15 @@ ModelImporter:
     2300030: Table2
     2300032: Table_000
     2300034: Table
+    2300036: Bench_left
+    2300038: Bench_right
+    2300040: Ceiling
+    2300042: guido-de-reni
+    2300044: jose-de-ribera
+    2300046: mattia-preti
+    2300048: peter-paul-rubens
+    2300050: Walls
+    2300052: Ground
     3300000: //RootNode
     3300002: Cube
     3300004: Plane
@@ -96,6 +131,15 @@ ModelImporter:
     3300030: Table2
     3300032: Table_000
     3300034: Table
+    3300036: Bench_left
+    3300038: Bench_right
+    3300040: Ceiling
+    3300042: guido-de-reni
+    3300044: jose-de-ribera
+    3300046: mattia-preti
+    3300048: peter-paul-rubens
+    3300050: Walls
+    3300052: Ground
     4300000: Plane
     4300002: Cube
     4300004: Arrow_head
@@ -113,6 +157,15 @@ ModelImporter:
     4300028: Table_000
     4300030: F_B_BQ_base
     4300032: Table
+    4300034: peter-paul-rubens
+    4300036: mattia-preti
+    4300038: guido-de-reni
+    4300040: jose-de-ribera
+    4300042: Ceiling
+    4300044: Walls
+    4300046: Bench_left
+    4300048: Bench_right
+    4300050: Ground
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
