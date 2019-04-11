@@ -2996,6 +2996,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 756046170}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &756046226 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400020, guid: f659c33c0cb0e534d9989f496695ecc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 756046170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &756046238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3014,7 +3020,7 @@ MonoBehaviour:
   - {fileID: 756046220}
   - {fileID: 756046217}
   MaxShoots: 6
-  Door: {fileID: 0}
+  Door: {fileID: 756046226}
 --- !u!114 &756046239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3031,6 +3037,8 @@ MonoBehaviour:
   LightMaterial: {fileID: 2100000, guid: 692ace6196860704686774e88a407cc5, type: 2}
   SuccessMaterial: {fileID: 2100000, guid: 7ac2a335667855e4b82c37c1598754f3, type: 2}
   WinMaterial: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
+  PaintingMaterial: {fileID: 2100000, guid: 3bb04d32206c1ef4fa53a67c5267d442, type: 2}
+  FrameMaterial: {fileID: 2100000, guid: 382c38c8e3645f54eb52b54ada61ba7c, type: 2}
 --- !u!114 &756046240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,6 +3055,8 @@ MonoBehaviour:
   LightMaterial: {fileID: 2100000, guid: 692ace6196860704686774e88a407cc5, type: 2}
   SuccessMaterial: {fileID: 2100000, guid: 7ac2a335667855e4b82c37c1598754f3, type: 2}
   WinMaterial: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
+  PaintingMaterial: {fileID: 2100000, guid: 1e86a089740437e438073df521d8cef8, type: 2}
+  FrameMaterial: {fileID: 2100000, guid: 382c38c8e3645f54eb52b54ada61ba7c, type: 2}
 --- !u!114 &756046241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3063,6 +3073,8 @@ MonoBehaviour:
   LightMaterial: {fileID: 2100000, guid: 692ace6196860704686774e88a407cc5, type: 2}
   SuccessMaterial: {fileID: 2100000, guid: 7ac2a335667855e4b82c37c1598754f3, type: 2}
   WinMaterial: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
+  PaintingMaterial: {fileID: 2100000, guid: 89efe102a3e892744b9f68defab03dd6, type: 2}
+  FrameMaterial: {fileID: 2100000, guid: 382c38c8e3645f54eb52b54ada61ba7c, type: 2}
 --- !u!114 &756046242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3079,6 +3091,8 @@ MonoBehaviour:
   LightMaterial: {fileID: 2100000, guid: 692ace6196860704686774e88a407cc5, type: 2}
   SuccessMaterial: {fileID: 2100000, guid: 7ac2a335667855e4b82c37c1598754f3, type: 2}
   WinMaterial: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
+  PaintingMaterial: {fileID: 2100000, guid: 6fff2f10c7150ef40b6dd067102b7c29, type: 2}
+  FrameMaterial: {fileID: 2100000, guid: 382c38c8e3645f54eb52b54ada61ba7c, type: 2}
 --- !u!1 &780968264
 GameObject:
   m_ObjectHideFlags: 0
@@ -6389,9 +6403,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 1725831069}
   - {fileID: 1231943234}
   - {fileID: 181128306}
-  - {fileID: 1725831069}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &1627479227
@@ -6403,7 +6417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627479225}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 956653214}
