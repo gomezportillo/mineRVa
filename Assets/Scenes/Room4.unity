@@ -3029,7 +3029,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManagerHolder: {fileID: 756046204}
   LightMaterial: {fileID: 2100000, guid: 692ace6196860704686774e88a407cc5, type: 2}
-  BaseMaterial: {fileID: 2100000, guid: 382c38c8e3645f54eb52b54ada61ba7c, type: 2}
+  SuccessMaterial: {fileID: 2100000, guid: 7ac2a335667855e4b82c37c1598754f3, type: 2}
+  WinMaterial: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
 --- !u!114 &756046240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3044,7 +3045,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManagerHolder: {fileID: 756046204}
   LightMaterial: {fileID: 2100000, guid: 692ace6196860704686774e88a407cc5, type: 2}
-  BaseMaterial: {fileID: 2100000, guid: 382c38c8e3645f54eb52b54ada61ba7c, type: 2}
+  SuccessMaterial: {fileID: 2100000, guid: 7ac2a335667855e4b82c37c1598754f3, type: 2}
+  WinMaterial: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
 --- !u!114 &756046241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3059,7 +3061,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManagerHolder: {fileID: 756046204}
   LightMaterial: {fileID: 2100000, guid: 692ace6196860704686774e88a407cc5, type: 2}
-  BaseMaterial: {fileID: 2100000, guid: 382c38c8e3645f54eb52b54ada61ba7c, type: 2}
+  SuccessMaterial: {fileID: 2100000, guid: 7ac2a335667855e4b82c37c1598754f3, type: 2}
+  WinMaterial: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
 --- !u!114 &756046242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3074,7 +3077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManagerHolder: {fileID: 756046204}
   LightMaterial: {fileID: 2100000, guid: 692ace6196860704686774e88a407cc5, type: 2}
-  BaseMaterial: {fileID: 2100000, guid: 382c38c8e3645f54eb52b54ada61ba7c, type: 2}
+  SuccessMaterial: {fileID: 2100000, guid: 7ac2a335667855e4b82c37c1598754f3, type: 2}
+  WinMaterial: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
 --- !u!1 &780968264
 GameObject:
   m_ObjectHideFlags: 0
@@ -6385,9 +6389,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
-  - {fileID: 1725831069}
   - {fileID: 1231943234}
   - {fileID: 181128306}
+  - {fileID: 1725831069}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &1627479227

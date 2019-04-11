@@ -23,7 +23,6 @@ public class ArrowGameManager : MonoBehaviour
         for (int i = 0; i < paintings.Length; i++)
         {
             painting_scripts[i] = paintings[i].GetComponent<PaintingColliderDetector>();
-            painting_scripts[i].Disable();
         }
 
         // Disable the exit door collider
@@ -53,6 +52,11 @@ public class ArrowGameManager : MonoBehaviour
 
         if (SuccessfulShots >= MaxShoots)
         {
+            for (int i = 0; i < painting_scripts.Length; i++)
+            {
+                painting_scripts[i].Win();
+            }
+
             // Win. Unlock exit
             if (door_script != null)
             {
