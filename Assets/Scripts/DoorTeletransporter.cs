@@ -1,16 +1,24 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class DoorCollider : MonoBehaviour
+public class DoorTeletransporter : MonoBehaviour
 {
     public string scene_name;
     public float fadingTime = 10.0f;
+    public GameObject LockIcon;
+    public bool IsExitDoor = false;
 
     private bool collider_enabled = true;
 
+    private void Start()
+    {
+        collider_enabled = true;
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) // Next scene
+        if (IsExitDoor && Input.GetKeyDown(KeyCode.Space)) // Next scene
         {
             MyLoadScene(scene_name, LoadSceneMode.Single);
         }
@@ -35,10 +43,20 @@ public class DoorCollider : MonoBehaviour
     public void Enable()
     {
         collider_enabled = true;
+
+        if (LockIcon != null)
+        {
+            LockIcon.SetActive(false);
+        }
     }
 
     public void Disable()
     {
         collider_enabled = false;
+
+        if (LockIcon != null)
+        {
+            LockIcon.SetActive(true);
+        }
     }
 }

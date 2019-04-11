@@ -4,12 +4,12 @@ public class AppleColliderDetector : MonoBehaviour
 {
     public Transform door;
 
-    private DoorCollider door_collider_script;
+    private DoorTeletransporter door_collider_script;
     private readonly string TAG_NAME = "Apple";
 
     private void Awake()
     {
-        door_collider_script = door.GetComponent<DoorCollider>();
+        door_collider_script = door.GetComponent<DoorTeletransporter>();
         if (door_collider_script != null)
         {
             door_collider_script.Disable();

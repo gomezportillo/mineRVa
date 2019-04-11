@@ -6,7 +6,7 @@ public class TrashDetector : MonoBehaviour
 {
     public Transform door;
 
-    private DoorCollider door_collider_script;
+    private DoorTeletransporter door_collider_script;
     private readonly string TAG_NAME = "Trash";
 
     private readonly int MAX_TRASH = 4;
@@ -14,7 +14,7 @@ public class TrashDetector : MonoBehaviour
 
     private void Awake()
     {
-        door_collider_script = door.GetComponent<DoorCollider>();
+        door_collider_script = door.GetComponent<DoorTeletransporter>();
         if (door_collider_script != null)
         {
             door_collider_script.Disable();

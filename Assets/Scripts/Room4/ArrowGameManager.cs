@@ -12,7 +12,7 @@ public class ArrowGameManager : MonoBehaviour
     private int SuccessfulShots = 0;
     private int CurrentIndex = 0;
     private PaintingColliderDetector[] painting_scripts;
-    private DoorCollider door_script;
+    private DoorTeletransporter door_script;
     private bool started = false;
 
     void Start()
@@ -28,7 +28,7 @@ public class ArrowGameManager : MonoBehaviour
         // Disable the exit door collider
         if (Door != null)
         {
-            door_script = Door.GetComponent<DoorCollider>();
+            door_script = Door.GetComponent<DoorTeletransporter>();
             if (door_script != null)
             {
                 door_script.Disable();
