@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18343279, g: 0.22902009, b: 0.3059542, a: 1}
+  m_IndirectSpecularColor: {r: 0.17925313, g: 0.22445239, b: 0.30617693, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2715,12 +2715,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 756046170}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &756046180 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100038, guid: f659c33c0cb0e534d9989f496695ecc5,
-    type: 3}
-  m_PrefabInstance: {fileID: 756046170}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &756046181
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2838,32 +2832,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.227347, y: 0.48894513, z: 6.2592773}
   m_Center: {x: 0.32950753, y: -13.930591, z: 2.8925009}
---- !u!65 &756046190
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756046180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6610591, y: 3.2071748, z: 1.9126225}
-  m_Center: {x: 0.024139509, y: 3.9691625e-15, z: 0.95581526}
---- !u!65 &756046191
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756046180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7073584, y: 3.2071748, z: 1.9126225}
-  m_Center: {x: -22.222368, y: 3.9691625e-15, z: 0.95581526}
 --- !u!114 &756046192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7178,13 +7146,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770684320}
-  m_LocalRotation: {x: -0.43191594, y: 0.782902, z: -0.13243708, w: -0.42775398}
+  m_LocalRotation: {x: -0.5197741, y: 0.6876695, z: -0.25656754, w: -0.4371712}
   m_LocalPosition: {x: 2.51, y: 1.68, z: -2.676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 35.231003, y: 222.83699, z: -43.570004}
+  m_LocalEulerAnglesHint: {x: 53.836002, y: 214.536, z: -56.230003}
 --- !u!1 &1779769790 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100052, guid: f659c33c0cb0e534d9989f496695ecc5,

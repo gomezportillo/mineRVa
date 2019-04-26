@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 8af353cfc41d3644cb2f12ba26b22491
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cajon_der_abajo
+    100004: Cajon_der_arriba
+    100006: Cajon_izq_abajo
+    100008: Cajon_izq_arriba
+    100010: Cajon_medio
+    100012: Chair
+    100014: Chair_alt
+    100016: curtain
+    100018: fusilamiento-torrijos
+    100020: Ground
+    100022: juana-loca
+    100024: Key
+    100026: navegange-nubes
+    100028: Table_1
+    100030: Walls
+    100032: Cube
+    100034: Ceiling
+    400000: //RootNode
+    400002: Cajon_der_abajo
+    400004: Cajon_der_arriba
+    400006: Cajon_izq_abajo
+    400008: Cajon_izq_arriba
+    400010: Cajon_medio
+    400012: Chair
+    400014: Chair_alt
+    400016: curtain
+    400018: fusilamiento-torrijos
+    400020: Ground
+    400022: juana-loca
+    400024: Key
+    400026: navegange-nubes
+    400028: Table_1
+    400030: Walls
+    400032: Cube
+    400034: Ceiling
+    2100000: fusilamiento-torrijos__fusilamiento-torrijos_jpg
+    2100002: navegange-nubes__navegange-nubes_jpg
+    2100004: juana-loca__juana-loca_jpg
+    2100006: curtain_cloth_obj___fabric_jpg
+    2100008: curtain_cloth_obj_
+    2100010: Respaldo
+    2100012: Wood
+    2100014: BoneWhite
+    2100016: Sillin__Chair_sit_jpg
+    2100018: Gold
+    2100020: unnamed
+    2100022: Respaldo_alt
+    2100024: Sillin_alt__Chair_sit_alt_jpg
+    2100026: Asa
+    2100028: Cajon
+    2100030: Walls
+    2100032: Crystal
+    2100034: Cortina__fabric_jpg
+    2100036: Cortina_back
+    2100038: Ground
+    2100040: Wood__fusilamiento-torrijos_jpg
+    2100042: Wood__navegange-nubes_jpg
+    2100044: Wood__juana-loca_jpg
+    2300000: Cajon_der_abajo
+    2300002: Cajon_der_arriba
+    2300004: Cajon_izq_abajo
+    2300006: Cajon_izq_arriba
+    2300008: Cajon_medio
+    2300010: Chair
+    2300012: Chair_alt
+    2300014: curtain
+    2300016: fusilamiento-torrijos
+    2300018: Ground
+    2300020: juana-loca
+    2300022: Key
+    2300024: navegange-nubes
+    2300026: Table_1
+    2300028: Walls
+    2300030: Cube
+    2300032: Ceiling
+    3300000: Cajon_der_abajo
+    3300002: Cajon_der_arriba
+    3300004: Cajon_izq_abajo
+    3300006: Cajon_izq_arriba
+    3300008: Cajon_medio
+    3300010: Chair
+    3300012: Chair_alt
+    3300014: curtain
+    3300016: fusilamiento-torrijos
+    3300018: Ground
+    3300020: juana-loca
+    3300022: Key
+    3300024: navegange-nubes
+    3300026: Table_1
+    3300028: Walls
+    3300030: Cube
+    3300032: Ceiling
+    4300000: fusilamiento-torrijos
+    4300002: navegange-nubes
+    4300004: juana-loca
+    4300006: curtain
+    4300008: Chair
+    4300010: Key
+    4300012: Walls
+    4300014: Ground
+    4300016: Table_1
+    4300018: Cajon_der_arriba
+    4300020: Cajon_der_abajo
+    4300022: Cajon_izq_abajo
+    4300024: Cajon_izq_arriba
+    4300026: Cajon_medio
+    4300028: Chair_alt
+    4300030: Cube
+    4300032: Ceiling
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
