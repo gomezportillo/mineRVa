@@ -2844,10 +2844,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: 
+  scene_name: Room5
   fadingTime: 10
   LockIcon: {fileID: 1919326501}
-  IsExitDoor: 0
+  IsExitDoor: 1
 --- !u!114 &756046193
 MonoBehaviour:
   m_ObjectHideFlags: 0
