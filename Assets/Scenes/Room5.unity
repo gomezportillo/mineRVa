@@ -6812,20 +6812,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 270901886}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &270901889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270901888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b256669fe6bddcf428c738833a9383de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Door: {fileID: 0}
-  TAG_NAME: 
 --- !u!114 &270901890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14119,10 +14105,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100016, guid: 8af353cfc41d3644cb2f12ba26b22491, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 100018, guid: 8af353cfc41d3644cb2f12ba26b22491, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -14160,6 +14142,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100030, guid: 8af353cfc41d3644cb2f12ba26b22491, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 8af353cfc41d3644cb2f12ba26b22491, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
