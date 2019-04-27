@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
-public class AppleColliderDetector : MonoBehaviour
+public class TagColliderDetector : MonoBehaviour
 {
-    public Transform door;
+    public Transform Door;
+    public string TAG_NAME;
 
     private DoorTeletransporter door_collider_script;
-    private readonly string TAG_NAME = "Apple";
 
     private void Awake()
     {
-        door_collider_script = door.GetComponent<DoorTeletransporter>();
+        door_collider_script = Door.GetComponent<DoorTeletransporter>();
         if (door_collider_script != null)
         {
             door_collider_script.Disable();
@@ -36,6 +36,5 @@ public class AppleColliderDetector : MonoBehaviour
             Debug.Log("exit");
             door_collider_script.Disable();
         }
-
     }
 }
