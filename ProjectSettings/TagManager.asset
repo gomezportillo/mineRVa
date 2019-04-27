@@ -21,6 +21,7 @@ TagManager:
   - Bow
   - Arrow
   - Ground
+  - Key
   layers:
   - Default
   - TransparentFX

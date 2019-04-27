@@ -21,6 +21,11 @@ ModelImporter:
     100030: Walls
     100032: Cube
     100034: Ceiling
+    100036: Door_in
+    100038: Door_in_black
+    100040: Door_out
+    100042: Door_out_black
+    100044: Courtains
     400000: //RootNode
     400002: Cajon_der_abajo
     400004: Cajon_der_arriba
@@ -39,6 +44,11 @@ ModelImporter:
     400030: Walls
     400032: Cube
     400034: Ceiling
+    400036: Door_in
+    400038: Door_in_black
+    400040: Door_out
+    400042: Door_out_black
+    400044: Courtains
     2100000: fusilamiento-torrijos__fusilamiento-torrijos_jpg
     2100002: navegange-nubes__navegange-nubes_jpg
     2100004: juana-loca__juana-loca_jpg
@@ -62,6 +72,7 @@ ModelImporter:
     2100040: Wood__fusilamiento-torrijos_jpg
     2100042: Wood__navegange-nubes_jpg
     2100044: Wood__juana-loca_jpg
+    2100046: Black
     2300000: Cajon_der_abajo
     2300002: Cajon_der_arriba
     2300004: Cajon_izq_abajo
@@ -79,6 +90,11 @@ ModelImporter:
     2300028: Walls
     2300030: Cube
     2300032: Ceiling
+    2300034: Door_in
+    2300036: Door_in_black
+    2300038: Door_out
+    2300040: Door_out_black
+    2300042: Courtains
     3300000: Cajon_der_abajo
     3300002: Cajon_der_arriba
     3300004: Cajon_izq_abajo
@@ -96,6 +112,11 @@ ModelImporter:
     3300028: Walls
     3300030: Cube
     3300032: Ceiling
+    3300034: Door_in
+    3300036: Door_in_black
+    3300038: Door_out
+    3300040: Door_out_black
+    3300042: Courtains
     4300000: fusilamiento-torrijos
     4300002: navegange-nubes
     4300004: juana-loca
@@ -113,6 +134,11 @@ ModelImporter:
     4300028: Chair_alt
     4300030: Cube
     4300032: Ceiling
+    4300034: Door_in
+    4300036: Door_in_black
+    4300038: Door_out_black
+    4300040: Door_out
+    4300042: Courtains
   externalObjects: {}
   materials:
     importMaterials: 1
