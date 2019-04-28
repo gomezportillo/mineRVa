@@ -1088,7 +1088,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252176975}
   m_LocalRotation: {x: -0, y: 0.08715569, z: -0, w: 0.9961947}
-  m_LocalPosition: {x: 1.062, y: 0.075, z: 0.997}
+  m_LocalPosition: {x: 2.41, y: 0.075, z: 0.759}
   m_LocalScale: {x: 0.26666653, y: 0.26666668, z: 0.26666653}
   m_Children: []
   m_Father: {fileID: 920728512}
@@ -2922,6 +2922,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scene_name: Room3
   fadingTime: 10
+  LockIcon: {fileID: 0}
+  IsExitDoor: 0
 --- !u!1 &920728511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,8 +2996,8 @@ MonoBehaviour:
   connectedTo: {fileID: 0}
   hingePoint: {fileID: 252176976}
   angleLimits:
-    minimum: 0
-    maximum: 110
+    minimum: -110
+    maximum: 0
   minMaxThresholdAngle: 1
   restingAngle: 0
   forceRestingAngleThreshold: 15
@@ -6184,15 +6186,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708279474}
-  m_LocalRotation: {x: -0, y: 0.13355339, z: -0, w: 0.99104166}
-  m_LocalPosition: {x: 2.3277106, y: 0.043999866, z: 0.63125575}
+  m_LocalRotation: {x: -0, y: 0.090987384, z: -0, w: 0.99585205}
+  m_LocalPosition: {x: 1.0956, y: 0.043999866, z: 0.8488}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 2096521906}
   - {fileID: 10956552}
   m_Father: {fileID: 920728512}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 15.35, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 10.441001, z: 0}
 --- !u!1 &1716435171
 GameObject:
   m_ObjectHideFlags: 0
@@ -6786,6 +6788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scene_name: Room1
   fadingTime: 10
+  LockIcon: {fileID: 0}
+  IsExitDoor: 0
 --- !u!65 &1816433377
 BoxCollider:
   m_ObjectHideFlags: 0
