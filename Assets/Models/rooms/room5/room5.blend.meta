@@ -26,6 +26,7 @@ ModelImporter:
     100040: Door_out
     100042: Door_out_black
     100044: Courtains
+    100046: Cylinder
     400000: //RootNode
     400002: Cajon_der_abajo
     400004: Cajon_der_arriba
@@ -49,6 +50,7 @@ ModelImporter:
     400040: Door_out
     400042: Door_out_black
     400044: Courtains
+    400046: Cylinder
     2100000: fusilamiento-torrijos__fusilamiento-torrijos_jpg
     2100002: navegange-nubes__navegange-nubes_jpg
     2100004: juana-loca__juana-loca_jpg
@@ -73,6 +75,8 @@ ModelImporter:
     2100042: Wood__navegange-nubes_jpg
     2100044: Wood__juana-loca_jpg
     2100046: Black
+    2100048: Walls__stucco-NORMAL_jpg
+    2100050: Statue
     2300000: Cajon_der_abajo
     2300002: Cajon_der_arriba
     2300004: Cajon_izq_abajo
@@ -95,6 +99,7 @@ ModelImporter:
     2300038: Door_out
     2300040: Door_out_black
     2300042: Courtains
+    2300044: Cylinder
     3300000: Cajon_der_abajo
     3300002: Cajon_der_arriba
     3300004: Cajon_izq_abajo
@@ -117,6 +122,7 @@ ModelImporter:
     3300038: Door_out
     3300040: Door_out_black
     3300042: Courtains
+    3300044: Cylinder
     4300000: fusilamiento-torrijos
     4300002: navegange-nubes
     4300004: juana-loca
@@ -139,6 +145,7 @@ ModelImporter:
     4300038: Door_out_black
     4300040: Door_out
     4300042: Courtains
+    4300044: Cylinder
   externalObjects: {}
   materials:
     importMaterials: 1
