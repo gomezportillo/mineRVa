@@ -27,6 +27,7 @@ ModelImporter:
     100042: Door_out_black
     100044: Courtains
     100046: Cylinder
+    100048: Thinker
     400000: //RootNode
     400002: Cajon_der_abajo
     400004: Cajon_der_arriba
@@ -51,6 +52,7 @@ ModelImporter:
     400042: Door_out_black
     400044: Courtains
     400046: Cylinder
+    400048: Thinker
     2100000: fusilamiento-torrijos__fusilamiento-torrijos_jpg
     2100002: navegange-nubes__navegange-nubes_jpg
     2100004: juana-loca__juana-loca_jpg
@@ -100,6 +102,7 @@ ModelImporter:
     2300040: Door_out_black
     2300042: Courtains
     2300044: Cylinder
+    2300046: Thinker
     3300000: Cajon_der_abajo
     3300002: Cajon_der_arriba
     3300004: Cajon_izq_abajo
@@ -123,6 +126,7 @@ ModelImporter:
     3300040: Door_out_black
     3300042: Courtains
     3300044: Cylinder
+    3300046: Thinker
     4300000: fusilamiento-torrijos
     4300002: navegange-nubes
     4300004: juana-loca
@@ -146,6 +150,7 @@ ModelImporter:
     4300040: Door_out
     4300042: Courtains
     4300044: Cylinder
+    4300046: Thinker
   externalObjects: {}
   materials:
     importMaterials: 1
