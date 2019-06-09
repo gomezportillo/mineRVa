@@ -33,6 +33,34 @@ ModelImporter:
     100054: noche-estrellada_003
     100056: tentacion_002
     100058: tentacion_003
+    100060: Boolean_door
+    100062: Ceiling
+    100064: Grito_min
+    100066: Ground
+    100068: Holder
+    100070: Walls
+    100072: Walls_old
+    100074: Walls_old_2
+    100076: Wood_planks
+    100078: Grito_big
+    100080: Grito_small
+    100082: Guernica_big
+    100084: Guernica_small
+    100086: Noche_estrell_big
+    100088: Noche_estrell_small
+    100090: Tentacion_big
+    100092: Tentacion_small
+    100094: Tentacion_piece_1
+    100096: Tentacion_piece_2
+    100098: Tentacion_piece_3
+    100100: Tentacion_piece_4
+    100102: Tentacion_pieces
+    100104: Cube
+    100106: Tentacion_piece_1_001
+    100108: Cube_001
+    100110: Cube_002
+    100112: Cube_003
+    100114: Cube_004
     400000: Circle
     400002: Circle_001
     400004: Circle_002
@@ -63,6 +91,34 @@ ModelImporter:
     400054: noche-estrellada_003
     400056: tentacion_002
     400058: tentacion_003
+    400060: Boolean_door
+    400062: Ceiling
+    400064: Grito_min
+    400066: Ground
+    400068: Holder
+    400070: Walls
+    400072: Walls_old
+    400074: Walls_old_2
+    400076: Wood_planks
+    400078: Grito_big
+    400080: Grito_small
+    400082: Guernica_big
+    400084: Guernica_small
+    400086: Noche_estrell_big
+    400088: Noche_estrell_small
+    400090: Tentacion_big
+    400092: Tentacion_small
+    400094: Tentacion_piece_1
+    400096: Tentacion_piece_2
+    400098: Tentacion_piece_3
+    400100: Tentacion_piece_4
+    400102: Tentacion_pieces
+    400104: Cube
+    400106: Tentacion_piece_1_001
+    400108: Cube_001
+    400110: Cube_002
+    400112: Cube_003
+    400114: Cube_004
     2100000: Wood
     2100002: unnamed
     2100004: guernica__guernica_jpg
@@ -75,6 +131,15 @@ ModelImporter:
     2100018: Wood__tentacion_jpg
     2100020: Tiles__Tiles_COLOR_jpg
     2100022: Wood__Tiles_COLOR_jpg
+    2100024: None__noche-estrellada_jpg
+    2100026: None__guernica_jpg
+    2100028: None__grito_jpg
+    2100030: None__tentacion_jpg
+    2100032: Material__noche-estrellada_jpg
+    2100034: Material__guernica_jpg
+    2100036: Material__grito_jpg
+    2100038: Material__tentacion_jpg
+    2100040: Material
     2300000: Circle
     2300002: Circle_001
     2300004: Circle_002
@@ -104,6 +169,34 @@ ModelImporter:
     2300052: noche-estrellada_003
     2300054: tentacion_002
     2300056: tentacion_003
+    2300058: Boolean_door
+    2300060: Ceiling
+    2300062: Grito_min
+    2300064: Ground
+    2300066: Holder
+    2300068: Walls
+    2300070: Walls_old
+    2300072: Walls_old_2
+    2300074: Wood_planks
+    2300076: Grito_big
+    2300078: Grito_small
+    2300080: Guernica_big
+    2300082: Guernica_small
+    2300084: Noche_estrell_big
+    2300086: Noche_estrell_small
+    2300088: Tentacion_big
+    2300090: Tentacion_small
+    2300092: Tentacion_piece_1
+    2300094: Tentacion_piece_2
+    2300096: Tentacion_piece_3
+    2300098: Tentacion_piece_4
+    2300100: Tentacion_pieces
+    2300102: Cube
+    2300104: Tentacion_piece_1_001
+    2300106: Cube_001
+    2300108: Cube_002
+    2300110: Cube_003
+    2300112: Cube_004
     3300000: Circle
     3300002: Circle_001
     3300004: Circle_002
@@ -133,6 +226,34 @@ ModelImporter:
     3300052: noche-estrellada_003
     3300054: tentacion_002
     3300056: tentacion_003
+    3300058: Boolean_door
+    3300060: Ceiling
+    3300062: Grito_min
+    3300064: Ground
+    3300066: Holder
+    3300068: Walls
+    3300070: Walls_old
+    3300072: Walls_old_2
+    3300074: Wood_planks
+    3300076: Grito_big
+    3300078: Grito_small
+    3300080: Guernica_big
+    3300082: Guernica_small
+    3300084: Noche_estrell_big
+    3300086: Noche_estrell_small
+    3300088: Tentacion_big
+    3300090: Tentacion_small
+    3300092: Tentacion_piece_1
+    3300094: Tentacion_piece_2
+    3300096: Tentacion_piece_3
+    3300098: Tentacion_piece_4
+    3300100: Tentacion_pieces
+    3300102: Cube
+    3300104: Tentacion_piece_1_001
+    3300106: Cube_001
+    3300108: Cube_002
+    3300110: Cube_003
+    3300112: Cube_004
     4300000: Circle_005
     4300002: Circle_004
     4300004: guernica_001
@@ -162,8 +283,37 @@ ModelImporter:
     4300052: guernica_002
     4300054: Door_out
     4300056: Door_in
+    4300058: Wood_planks
+    4300060: Boolean_door
+    4300062: Walls_old_2
+    4300064: Ceiling
+    4300066: Grito_min
+    4300068: Holder
+    4300070: Ground
+    4300072: Walls
+    4300074: Walls_old
+    4300076: Guernica_small
+    4300078: Guernica_big
+    4300080: Noche_estrell_small
+    4300082: Noche_estrell_big
+    4300084: Grito_small
+    4300086: Grito_big
+    4300088: Tentacion_small
+    4300090: Tentacion_big
+    4300092: Tentacion_pieces
+    4300094: Tentacion_piece_4
+    4300096: Tentacion_piece_2
+    4300098: Tentacion_piece_1
+    4300100: Tentacion_piece_3
+    4300102: Cube
+    4300104: Tentacion_piece_1_001
+    4300106: Cube_004
+    4300108: Cube_003
+    4300110: Cube_002
+    4300112: Cube_001
     7400000: Default Take
     9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
