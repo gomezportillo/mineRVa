@@ -61,6 +61,21 @@ ModelImporter:
     100110: Cube_002
     100112: Cube_003
     100114: Cube_004
+    100116: Grito_piece_1
+    100118: Grito_piece_2
+    100120: Grito_piece_3
+    100122: Grito_piece_4
+    100124: Grito_pieces
+    100126: Guernica_pieces
+    100128: Guernica_piece_1
+    100130: Guernica_piece_2
+    100132: Guernica_piece_3
+    100134: Guernica_piece_4
+    100136: Noche_piece_1
+    100138: Noche_piece_2
+    100140: Noche_piece_3
+    100142: Noche_piece_4
+    100144: Noche_pieces
     400000: Circle
     400002: Circle_001
     400004: Circle_002
@@ -119,6 +134,21 @@ ModelImporter:
     400110: Cube_002
     400112: Cube_003
     400114: Cube_004
+    400116: Grito_piece_1
+    400118: Grito_piece_2
+    400120: Grito_piece_3
+    400122: Grito_piece_4
+    400124: Grito_pieces
+    400126: Guernica_pieces
+    400128: Guernica_piece_1
+    400130: Guernica_piece_2
+    400132: Guernica_piece_3
+    400134: Guernica_piece_4
+    400136: Noche_piece_1
+    400138: Noche_piece_2
+    400140: Noche_piece_3
+    400142: Noche_piece_4
+    400144: Noche_pieces
     2100000: Wood
     2100002: unnamed
     2100004: guernica__guernica_jpg
@@ -197,6 +227,21 @@ ModelImporter:
     2300108: Cube_002
     2300110: Cube_003
     2300112: Cube_004
+    2300114: Grito_piece_1
+    2300116: Grito_piece_2
+    2300118: Grito_piece_3
+    2300120: Grito_piece_4
+    2300122: Grito_pieces
+    2300124: Guernica_pieces
+    2300126: Guernica_piece_1
+    2300128: Guernica_piece_2
+    2300130: Guernica_piece_3
+    2300132: Guernica_piece_4
+    2300134: Noche_piece_1
+    2300136: Noche_piece_2
+    2300138: Noche_piece_3
+    2300140: Noche_piece_4
+    2300142: Noche_pieces
     3300000: Circle
     3300002: Circle_001
     3300004: Circle_002
@@ -254,6 +299,21 @@ ModelImporter:
     3300108: Cube_002
     3300110: Cube_003
     3300112: Cube_004
+    3300114: Grito_piece_1
+    3300116: Grito_piece_2
+    3300118: Grito_piece_3
+    3300120: Grito_piece_4
+    3300122: Grito_pieces
+    3300124: Guernica_pieces
+    3300126: Guernica_piece_1
+    3300128: Guernica_piece_2
+    3300130: Guernica_piece_3
+    3300132: Guernica_piece_4
+    3300134: Noche_piece_1
+    3300136: Noche_piece_2
+    3300138: Noche_piece_3
+    3300140: Noche_piece_4
+    3300142: Noche_pieces
     4300000: Circle_005
     4300002: Circle_004
     4300004: guernica_001
@@ -311,6 +371,21 @@ ModelImporter:
     4300108: Cube_003
     4300110: Cube_002
     4300112: Cube_001
+    4300114: Grito_pieces
+    4300116: Grito_piece_3
+    4300118: Grito_piece_1
+    4300120: Grito_piece_2
+    4300122: Grito_piece_4
+    4300124: Guernica_pieces
+    4300126: Guernica_piece_3
+    4300128: Guernica_piece_2
+    4300130: Guernica_piece_1
+    4300132: Guernica_piece_4
+    4300134: Noche_pieces
+    4300136: Noche_piece_3
+    4300138: Noche_piece_2
+    4300140: Noche_piece_1
+    4300142: Noche_piece_4
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
