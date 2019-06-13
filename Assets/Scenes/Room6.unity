@@ -1341,6 +1341,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa31935730602684ca098655260a7c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &124616611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124616612}
+  - component: {fileID: 124616613}
+  m_Layer: 0
+  m_Name: Collider_base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124616612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124616611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1538496022}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &124616613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124616611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 46, y: 52, z: 7}
+  m_Center: {x: 0, y: 0, z: 3.3}
 --- !u!1 &140555960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,7 +1913,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene_name: Room7
-  fadingTime: 10
   LockIcon: {fileID: 934439647}
   IsExitDoor: 1
 --- !u!65 &179109983
@@ -2108,7 +2151,7 @@ GameObject:
   - component: {fileID: 240997535}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2217,7 +2260,7 @@ GameObject:
   - component: {fileID: 243800586}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2558,7 +2601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400102, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.74
+      value: 3.63
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalScale.x
@@ -2574,11 +2617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.65
+      value: 1.61
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.45
+      value: 1.31
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2598,7 +2641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.27
+      value: 4.81
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2634,7 +2677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400126, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.17
+      value: 3.97
       objectReference: {fileID: 0}
     - target: {fileID: 400126, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2714,7 +2757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.68
+      value: 4.36
       objectReference: {fileID: 0}
     - target: {fileID: 2300034, guid: 06cc4e2738408914e9cd027195b94521, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5131,7 +5174,7 @@ GameObject:
   - component: {fileID: 269045889}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5353,8 +5396,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1222d6bb79b1aa34ea19145d84294d90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ExitDoor: {fileID: 179109980}
   PaintingCheckers:
   - {fileID: 830213088}
+  - {fileID: 877762048}
+  - {fileID: 531721896}
+  - {fileID: 192794701}
 --- !u!1 &318129427
 GameObject:
   m_ObjectHideFlags: 0
@@ -7264,7 +7311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene_name: Room5
-  fadingTime: 10
   LockIcon: {fileID: 0}
   IsExitDoor: 0
 --- !u!65 &692286423
@@ -7753,7 +7799,7 @@ GameObject:
   - component: {fileID: 752548178}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7812,7 +7858,7 @@ GameObject:
   - component: {fileID: 753921579}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9634,7 +9680,7 @@ GameObject:
   - component: {fileID: 955614881}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9778,7 +9824,7 @@ GameObject:
   - component: {fileID: 982399827}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10615,7 +10661,7 @@ GameObject:
   - component: {fileID: 1154371951}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11294,7 +11340,7 @@ GameObject:
   - component: {fileID: 1276807459}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11531,7 +11577,7 @@ GameObject:
   - component: {fileID: 1388199885}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12715,19 +12761,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 264585328}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1538496025
-BoxCollider:
+--- !u!114 &1538496023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538496021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3f84e1b36febea4d848939e97f4d7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameManagerHolder: {fileID: 1011019562}
+--- !u!135 &1538496024
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538496021}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 46.06105, y: 52.69546, z: 6.9934745}
-  m_Center: {x: -0.033824705, y: 0.0006247211, z: 3.3259065}
+  m_Radius: 18
+  m_Center: {x: -0.000008434783, y: -0.0000004471005, z: 5.727255}
 --- !u!1 &1576192931
 GameObject:
   m_ObjectHideFlags: 0
@@ -13079,7 +13138,7 @@ GameObject:
   - component: {fileID: 1624905642}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14004,7 +14063,7 @@ GameObject:
   - component: {fileID: 1791883645}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14184,7 +14243,7 @@ GameObject:
   - component: {fileID: 1803709627}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15112,7 +15171,7 @@ GameObject:
   - component: {fileID: 1921860284}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15525,7 +15584,7 @@ GameObject:
   - component: {fileID: 1963731232}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15829,7 +15888,7 @@ GameObject:
   - component: {fileID: 1981464572}
   m_Layer: 0
   m_Name: GroundTeleporter
-  m_TagString: Untagged
+  m_TagString: Script
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

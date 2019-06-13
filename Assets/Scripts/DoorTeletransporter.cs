@@ -1,19 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class DoorTeletransporter : MonoBehaviour
 {
     public string scene_name;
-    public float fadingTime = 10.0f;
     public GameObject LockIcon;
     public bool IsExitDoor = false;
 
-    private bool collider_enabled = true;
+    private bool TeletransporterEnabled;
 
-    private void Start()
+    private void Awake()
     {
-        collider_enabled = true;
+        TeletransporterEnabled = true;
     }
 
     void Update()
@@ -26,23 +24,23 @@ public class DoorTeletransporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        MyLoadScene(scene_name, LoadSceneMode.Single);
+        if (TeletransporterEnabled)
+        {
+            MyLoadScene(scene_name, LoadSceneMode.Single);
+        }
     }
 
     private void MyLoadScene(string scene_name, LoadSceneMode mode)
     {
-        if (collider_enabled)
+        if (scene_name != "" && !SceneManager.GetSceneByName(scene_name).isLoaded)
         {
-            if (scene_name != "" && !SceneManager.GetSceneByName(scene_name).isLoaded)
-            {
-                SceneManager.LoadScene(scene_name, mode);
-            }
+            SceneManager.LoadScene(scene_name, mode);
         }
     }
 
     public void Enable()
     {
-        collider_enabled = true;
+        TeletransporterEnabled = true;
 
         if (LockIcon != null)
         {
@@ -52,7 +50,7 @@ public class DoorTeletransporter : MonoBehaviour
 
     public void Disable()
     {
-        collider_enabled = false;
+        TeletransporterEnabled = false;
 
         if (LockIcon != null)
         {

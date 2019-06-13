@@ -35,7 +35,6 @@ public class PaintingChecker : MonoBehaviour
             Light = Bulb.transform.GetChild(0);
             Light.gameObject.SetActive(false);
         }
-        ChangeBulbColor(LightYellow);
 
         if (GameManager != null)
         {
@@ -78,8 +77,8 @@ public class PaintingChecker : MonoBehaviour
                 CorrectPieces++;
                 if (CorrectPieces == MAX_PIECES)
                 {
-                    CorrectlyFinished = true;
                     ChangeBulbColor(LightGreen);
+                    CorrectlyFinished = true;
                     GameManagerScript.PaintingFinished();
 
                     // locking pieces in place disabling its box colliders
@@ -89,6 +88,7 @@ public class PaintingChecker : MonoBehaviour
                         if (piece != null)
                         {
                             piece.GetComponent<BoxCollider>().enabled = false;
+                            piece.transform.GetChild(0).GetComponent<BoxCollider>().enabled = false;
                         }
                     }
                 }
@@ -126,29 +126,28 @@ public class PaintingChecker : MonoBehaviour
 
     private void ChangeBulbColor(Material m)
     {
-        if (Bulb != null)
+        if (!CorrectlyFinished)
         {
-            if (m != null)
+            if (Bulb != null)
             {
-                Material[] mats = Bulb.GetComponent<Renderer>().materials;
-                mats[2] = m;
-                Bulb.GetComponent<Renderer>().materials = mats;
+                if (m != null)
+                {
+                    Material[] mats = Bulb.GetComponent<Renderer>().materials;
+                    mats[2] = m;
+                    Bulb.GetComponent<Renderer>().materials = mats;
+                }
+            }
+
+            if (Light != null)
+            {
+                Light.gameObject.SetActive(true);
+                Light.GetComponent<Light>().color = m.color;
             }
         }
-
-        if (Light != null)
-        {
-            Light.gameObject.SetActive(true);
-            Light.GetComponent<Light>().color = m.color;
-        }
-
     }
 
     public void TurnOnLight()
     {
-        if (Light != null)
-        {
-            Light.gameObject.SetActive(true);
-        }
+        ChangeBulbColor(LightYellow);
     }
 }

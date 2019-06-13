@@ -23,6 +23,7 @@ TagManager:
   - Ground
   - Key
   - Painting_piece
+  - Script
   layers:
   - Default
   - TransparentFX
