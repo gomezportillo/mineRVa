@@ -76,6 +76,13 @@ ModelImporter:
     100140: Noche_piece_3
     100142: Noche_piece_4
     100144: Noche_pieces
+    100146: Light_noche
+    100148: Light_noche_001
+    100150: Light_noche_002
+    100152: Light_noche_003
+    100154: Light_grito
+    100156: Light_guernica
+    100158: Light_tentacion
     400000: Circle
     400002: Circle_001
     400004: Circle_002
@@ -149,6 +156,13 @@ ModelImporter:
     400140: Noche_piece_3
     400142: Noche_piece_4
     400144: Noche_pieces
+    400146: Light_noche
+    400148: Light_noche_001
+    400150: Light_noche_002
+    400152: Light_noche_003
+    400154: Light_grito
+    400156: Light_guernica
+    400158: Light_tentacion
     2100000: Wood
     2100002: unnamed
     2100004: guernica__guernica_jpg
@@ -170,6 +184,9 @@ ModelImporter:
     2100036: Material__grito_jpg
     2100038: Material__tentacion_jpg
     2100040: Material
+    2100042: Metal
+    2100044: Crystal
+    2100046: Light
     2300000: Circle
     2300002: Circle_001
     2300004: Circle_002
@@ -242,6 +259,13 @@ ModelImporter:
     2300138: Noche_piece_3
     2300140: Noche_piece_4
     2300142: Noche_pieces
+    2300144: Light_noche
+    2300146: Light_noche_001
+    2300148: Light_noche_002
+    2300150: Light_noche_003
+    2300152: Light_grito
+    2300154: Light_guernica
+    2300156: Light_tentacion
     3300000: Circle
     3300002: Circle_001
     3300004: Circle_002
@@ -314,6 +338,13 @@ ModelImporter:
     3300138: Noche_piece_3
     3300140: Noche_piece_4
     3300142: Noche_pieces
+    3300144: Light_noche
+    3300146: Light_noche_001
+    3300148: Light_noche_002
+    3300150: Light_noche_003
+    3300152: Light_grito
+    3300154: Light_guernica
+    3300156: Light_tentacion
     4300000: Circle_005
     4300002: Circle_004
     4300004: guernica_001
@@ -386,6 +417,13 @@ ModelImporter:
     4300138: Noche_piece_2
     4300140: Noche_piece_1
     4300142: Noche_piece_4
+    4300144: Light_noche
+    4300146: Light_noche_003
+    4300148: Light_noche_002
+    4300150: Light_noche_001
+    4300152: Light_grito
+    4300154: Light_tentacion
+    4300156: Light_guernica
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
