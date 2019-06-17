@@ -16,6 +16,7 @@ public class GameStarter : MonoBehaviour
         if (other.tag != "Painting_piece" && other.tag != "Script")
         {
             GameManagerScript.StartGame();
+            GetComponent<SphereCollider>().enabled = false;
         }
     }
 }
