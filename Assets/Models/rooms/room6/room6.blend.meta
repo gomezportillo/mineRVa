@@ -83,6 +83,8 @@ ModelImporter:
     100154: Light_grito
     100156: Light_guernica
     100158: Light_tentacion
+    100160: Staff_cube
+    100162: Text
     400000: Circle
     400002: Circle_001
     400004: Circle_002
@@ -163,6 +165,8 @@ ModelImporter:
     400154: Light_grito
     400156: Light_guernica
     400158: Light_tentacion
+    400160: Staff_cube
+    400162: Text
     2100000: Wood
     2100002: unnamed
     2100004: guernica__guernica_jpg
@@ -187,6 +191,7 @@ ModelImporter:
     2100042: Metal
     2100044: Crystal
     2100046: Light
+    2100048: Material_001
     2300000: Circle
     2300002: Circle_001
     2300004: Circle_002
@@ -266,6 +271,8 @@ ModelImporter:
     2300152: Light_grito
     2300154: Light_guernica
     2300156: Light_tentacion
+    2300158: Staff_cube
+    2300160: Text
     3300000: Circle
     3300002: Circle_001
     3300004: Circle_002
@@ -345,6 +352,8 @@ ModelImporter:
     3300152: Light_grito
     3300154: Light_guernica
     3300156: Light_tentacion
+    3300158: Staff_cube
+    3300160: Text
     4300000: Circle_005
     4300002: Circle_004
     4300004: guernica_001
@@ -424,6 +433,8 @@ ModelImporter:
     4300152: Light_grito
     4300154: Light_tentacion
     4300156: Light_guernica
+    4300158: Staff_cube
+    4300160: Text
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
