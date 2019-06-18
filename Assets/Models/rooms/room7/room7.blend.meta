@@ -44,6 +44,31 @@ ModelImporter:
     100076: Box1_025
     100078: Box1_026
     100080: Box1_027
+    100082: wine-stain
+    100084: Pallet_001
+    100086: Pallet_002
+    100088: Shelf_003
+    100090: Box_001
+    100092: Suzanne
+    100094: Walls
+    100096: Cylinder
+    100098: Pallet_003
+    100100: Pallet_004
+    100102: Plane
+    100104: Bucket
+    100106: Pallet_006
+    100108: Painting
+    100110: Plane_001
+    100112: Cylinder_001
+    100114: window
+    100116: Cube
+    100118: Box1_028
+    100120: Box_003
+    100122: Box_004
+    100124: Cylinder_002
+    100126: Pallet_005
+    100128: Brush
+    100130: Door
     400000: //RootNode
     400002: Box
     400004: Box1
@@ -85,6 +110,31 @@ ModelImporter:
     400076: Box1_025
     400078: Box1_026
     400080: Box1_027
+    400082: wine-stain
+    400084: Pallet_001
+    400086: Pallet_002
+    400088: Shelf_003
+    400090: Box_001
+    400092: Suzanne
+    400094: Walls
+    400096: Cylinder
+    400098: Pallet_003
+    400100: Pallet_004
+    400102: Plane
+    400104: Bucket
+    400106: Pallet_006
+    400108: Painting
+    400110: Plane_001
+    400112: Cylinder_001
+    400114: window
+    400116: Cube
+    400118: Box1_028
+    400120: Box_003
+    400122: Box_004
+    400124: Cylinder_002
+    400126: Pallet_005
+    400128: Brush
+    400130: Door
     2100000: Cover__Boxes_on_pallet0_png
     2100002: Box2__Boxes_on_pallet1_png
     2100004: SketchUp_Default
@@ -95,6 +145,27 @@ ModelImporter:
     2100014: Chair2
     2100016: Box2
     2100018: Concrete_ground
+    2100020: wine-stain__wine-stain_jpg
+    2100022: Wood__wine-stain_jpg
+    2100024: white__wine-stain_jpg
+    2100026: Wood
+    2100028: Monkey
+    2100030: Walls
+    2100032: phong2SG
+    2100034: phong3SG
+    2100036: blinn1SG
+    2100038: metal
+    2100040: plastic
+    2100042: Metal
+    2100044: Cover
+    2100046: Light
+    2100048: Cover_001__Boxes_on_pallet0_png
+    2100050: crystal
+    2100052: Material
+    2100054: Spray_Body
+    2100056: Spray_Top
+    2100058: Boquilla
+    2100060: Brush
     2300000: Box
     2300002: Box1
     2300004: Box_labeled
@@ -135,6 +206,31 @@ ModelImporter:
     2300074: Box1_025
     2300076: Box1_026
     2300078: Box1_027
+    2300080: wine-stain
+    2300082: Pallet_001
+    2300084: Pallet_002
+    2300086: Shelf_003
+    2300088: Box_001
+    2300090: Suzanne
+    2300092: Walls
+    2300094: Cylinder
+    2300096: Pallet_003
+    2300098: Pallet_004
+    2300100: Plane
+    2300102: Bucket
+    2300104: Pallet_006
+    2300106: Painting
+    2300108: Plane_001
+    2300110: Cylinder_001
+    2300112: window
+    2300114: Cube
+    2300116: Box1_028
+    2300118: Box_003
+    2300120: Box_004
+    2300122: Cylinder_002
+    2300124: Pallet_005
+    2300126: Brush
+    2300128: Door
     3300000: Box
     3300002: Box1
     3300004: Box_labeled
@@ -175,6 +271,31 @@ ModelImporter:
     3300074: Box1_025
     3300076: Box1_026
     3300078: Box1_027
+    3300080: wine-stain
+    3300082: Pallet_001
+    3300084: Pallet_002
+    3300086: Shelf_003
+    3300088: Box_001
+    3300090: Suzanne
+    3300092: Walls
+    3300094: Cylinder
+    3300096: Pallet_003
+    3300098: Pallet_004
+    3300100: Plane
+    3300102: Bucket
+    3300104: Pallet_006
+    3300106: Painting
+    3300108: Plane_001
+    3300110: Cylinder_001
+    3300112: window
+    3300114: Cube
+    3300116: Box1_028
+    3300118: Box_003
+    3300120: Box_004
+    3300122: Cylinder_002
+    3300124: Pallet_005
+    3300126: Brush
+    3300128: Door
     4300000: Covered_boxes
     4300002: Pallet1
     4300004: Covered_boxes1
@@ -215,6 +336,31 @@ ModelImporter:
     4300074: Box1_027
     4300076: Box1_026
     4300078: Box1_025
+    4300080: wine-stain
+    4300082: Pallet_002
+    4300084: Pallet_001
+    4300086: Shelf_003
+    4300088: Box_001
+    4300090: Suzanne
+    4300092: Walls
+    4300094: Cylinder
+    4300096: Pallet_004
+    4300098: Pallet_003
+    4300100: Plane
+    4300102: Bucket
+    4300104: Pallet_006
+    4300106: Painting
+    4300108: Plane_001
+    4300110: Cylinder_001
+    4300112: window
+    4300114: Cube
+    4300116: Cylinder_002
+    4300118: Box1_028
+    4300120: Box_004
+    4300122: Box_003
+    4300124: Pallet_005
+    4300126: Brush
+    4300128: Door
   externalObjects: {}
   materials:
     importMaterials: 1
