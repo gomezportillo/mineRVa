@@ -11,6 +11,7 @@ using TMPro;
 
 public class PaintingDescriptionManager : MonoBehaviour
 {
+    public string roomFolderName;
     public string descriptionFile;
     public VRTK_ControllerEvents rightControllerEvents;
     public VRTK_ControllerEvents leftControllerEvents;
@@ -19,23 +20,31 @@ public class PaintingDescriptionManager : MonoBehaviour
     public TextMeshProUGUI TextObject;
 
     private readonly string BASE_PATH = "Assets/Text/Painting_descriptions/";
-    private readonly string TAG_NAME = "[BodyColliderContainer]";
+    private readonly string PLAYER_TAG = "[BodyColliderContainer]";
 
     private bool player_near = false;
+    private string paintingDescription;
 
     private void Awake()
     {
         // Hides the text canvas
-        AvailabilityIcon.SetActive(false);
-        TextBackground.SetActive(false);
+        if (AvailabilityIcon != null)
+        {
+            AvailabilityIcon.SetActive(false);
+        }
+        
+        if (TextBackground != null)
+        {
+            TextBackground.SetActive(false);
+        }
 
-        // Reads the painting description and storeS it on a variable
-        string file_path = BASE_PATH + descriptionFile;
+        // Reads the painting description and stores it on a variable
+        string file_path = BASE_PATH + roomFolderName + '/' + descriptionFile;
 
-        if (System.IO.File.Exists(file_path))
+        if (System.IO.File.Exists(file_path) && TextObject != null)
         {
             StreamReader reader = new StreamReader(file_path);
-            TextObject.text = reader.ReadToEnd();
+            paintingDescription = reader.ReadToEnd();
             reader.Close();
         }
         else
@@ -70,6 +79,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     {
         if (player_near)
         {
+            TextObject.text = paintingDescription;
             AvailabilityIcon.SetActive(false);
             TextBackground.SetActive(true);
         }
@@ -87,7 +97,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // When the player gets close to the painting
-        if (other.name.Contains(TAG_NAME))
+        if (other.name.Contains(PLAYER_TAG))
         {
             player_near = true;
             AvailabilityIcon.SetActive(true);
@@ -97,7 +107,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         // When the player gets far from the painting
-        if (other.name.Contains(TAG_NAME))
+        if (other.name.Contains(PLAYER_TAG))
         {
             player_near = false;
             AvailabilityIcon.SetActive(false);

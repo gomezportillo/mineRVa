@@ -5664,7 +5664,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene_name: Room2
-  fadingTime: 10
   LockIcon: {fileID: 1194411208}
   IsExitDoor: 1
 --- !u!65 &1404670573
@@ -7819,6 +7818,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1977149638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1977149639}
+  - component: {fileID: 1977149641}
+  - component: {fileID: 1977149640}
+  m_Layer: 0
+  m_Name: PaintingDescription
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1977149639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977149638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2052769275}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1977149640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977149638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomFolderName: room1
+  descriptionFile: hijo_hombre.txt
+  rightControllerEvents: {fileID: 1014283109}
+  leftControllerEvents: {fileID: 1030478123}
+  AvailabilityIcon: {fileID: 1710814978}
+  TextBackground: {fileID: 408656863}
+  TextObject: {fileID: 1471844805}
+--- !u!135 &1977149641
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977149638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Center: {x: 12.744955, y: 0.29976004, z: 5.2005515}
 --- !u!1001 &1994508797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8545,8 +8608,6 @@ GameObject:
   - component: {fileID: 2052769275}
   - component: {fileID: 2052769277}
   - component: {fileID: 2052769276}
-  - component: {fileID: 2052769279}
-  - component: {fileID: 2052769278}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -8565,7 +8626,8 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 2.38, y: 1.2, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
-  m_Children: []
+  m_Children:
+  - {fileID: 1977149639}
   m_Father: {fileID: 2020046372}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8617,37 +8679,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052769274}
   m_Mesh: {fileID: 4300018, guid: 83a403fa18fe8df4bbeffcdf32e21b51, type: 3}
---- !u!114 &2052769278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052769274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  descriptionFile: hijo_hombre.txt
-  rightControllerEvents: {fileID: 1014283109}
-  leftControllerEvents: {fileID: 1030478123}
-  AvailabilityIcon: {fileID: 1710814978}
-  TextBackground: {fileID: 408656863}
-  TextObject: {fileID: 1471844805}
---- !u!135 &2052769279
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052769274}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 8
-  m_Center: {x: 12.744955, y: 0.29976004, z: 5.2005515}
 --- !u!1 &2078086394
 GameObject:
   m_ObjectHideFlags: 0
@@ -8946,7 +8977,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene_name: Room0
-  fadingTime: 10
   LockIcon: {fileID: 0}
   IsExitDoor: 0
 --- !u!65 &2137057525

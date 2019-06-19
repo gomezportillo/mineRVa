@@ -19,6 +19,9 @@
         public string openText;
         public string closedText;
 
+        public GameObject TextDescriptorOpen;
+        public GameObject TextDescriptorClosed;
+
         public Transform door_left;
         public Transform door_right;
 
@@ -40,6 +43,13 @@
                 controllable.MaxLimitReached += MaxLimitReached;
                 controllable.MinLimitReached += MinLimitReached;
             }
+
+            if (TextDescriptorOpen && TextDescriptorClosed)
+            {
+                TextDescriptorClosed.SetActive(true);
+                TextDescriptorOpen.SetActive(false);
+                ToggleTextDescriptors();
+            }
         }
 
         protected virtual void OnDisable()
@@ -55,12 +65,14 @@
         {
             SetOption(true, openText);
             door_opened = true;
+            ToggleTextDescriptors();
         }
 
         protected virtual void MinLimitReached(object sender, ControllableEventArgs e)
         {
             SetOption(false, closedText);
             door_opened = false;
+            ToggleTextDescriptors();
         }
 
         protected virtual void SetOption(bool value, string text)
@@ -95,6 +107,8 @@
             if (Input.GetKeyDown(KeyCode.O))
             {
                 door_opened = !door_opened;
+
+                ToggleTextDescriptors();
             }
 
             Vector3 left_position;
@@ -121,5 +135,14 @@
 
         }
 
+        private void ToggleTextDescriptors()
+        {
+            if (TextDescriptorOpen && TextDescriptorClosed)
+            {
+                Debug.Log("toggling");
+                TextDescriptorClosed.SetActive(!TextDescriptorClosed.activeSelf);
+                TextDescriptorOpen.SetActive(!TextDescriptorOpen.activeSelf);
+            }
+        }
     }
 }

@@ -5542,7 +5542,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene_name: Room1
-  fadingTime: 10
+  LockIcon: {fileID: 0}
+  IsExitDoor: 0
 --- !u!65 &2068917863
 BoxCollider:
   m_ObjectHideFlags: 0
