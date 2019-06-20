@@ -1,13 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class IgnoreCollision : MonoBehaviour
 {
     public Transform IgnoreWith;
-
-    void Start()
-    {
-    }
 
     void OnCollisionEnter(Collision collision)
     {

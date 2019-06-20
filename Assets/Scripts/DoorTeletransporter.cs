@@ -8,6 +8,7 @@ public class DoorTeletransporter : MonoBehaviour
     public bool IsExitDoor = false;
 
     private BoxCollider boxCollider;
+    private readonly string PLAYER_TAG = "[BodyColliderContainer]";
 
     private void Awake()
     {
@@ -20,7 +21,7 @@ public class DoorTeletransporter : MonoBehaviour
 
     void Update()
     {
-        if (IsExitDoor && Input.GetKeyDown(KeyCode.Space)) // Next scene
+        if (IsExitDoor && Input.GetKeyDown(KeyCode.N)) // Next scene
         {
             MyLoadScene(scene_name, LoadSceneMode.Single);
         }
@@ -28,7 +29,10 @@ public class DoorTeletransporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        MyLoadScene(scene_name, LoadSceneMode.Single);
+        if (other.name.Contains(PLAYER_TAG))
+        {
+            MyLoadScene(scene_name, LoadSceneMode.Single);
+        }
     }
 
     private void MyLoadScene(string scene_name, LoadSceneMode mode)

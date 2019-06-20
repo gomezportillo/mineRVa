@@ -5,6 +5,7 @@ public class GameStarter : MonoBehaviour
     public Transform GameManagerHolder;
 
     private PaintingPiecesGameManager GameManagerScript;
+    private readonly string PLAYER_TAG = "[BodyColliderContainer]";
 
     private void Awake()
     {
@@ -13,7 +14,7 @@ public class GameStarter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag != "Painting_piece" && other.tag != "Script")
+        if (other.name.Contains(PLAYER_TAG))
         {
             GameManagerScript.StartGame();
             GetComponent<SphereCollider>().enabled = false;

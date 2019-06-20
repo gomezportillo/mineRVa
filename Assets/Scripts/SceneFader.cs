@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System;
 
 enum FaderState
 {
@@ -18,7 +16,7 @@ public class SceneFader : MonoBehaviour
 
     //private State State = State.FadingFromBlack;
 
-    void Start()
+    void Awake()
     {
         if (FaderImage != null)
         {
