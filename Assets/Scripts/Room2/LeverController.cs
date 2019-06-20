@@ -139,7 +139,6 @@
         {
             if (TextDescriptorOpen && TextDescriptorClosed)
             {
-                Debug.Log("toggling");
                 TextDescriptorClosed.SetActive(!TextDescriptorClosed.activeSelf);
                 TextDescriptorOpen.SetActive(!TextDescriptorOpen.activeSelf);
             }
