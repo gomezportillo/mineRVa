@@ -7,11 +7,15 @@ public class DoorTeletransporter : MonoBehaviour
     public GameObject LockIcon;
     public bool IsExitDoor = false;
 
-    private bool TeletransporterEnabled;
+    private BoxCollider boxCollider;
 
     private void Awake()
     {
-        TeletransporterEnabled = true;
+        boxCollider = GetComponent<BoxCollider>();
+        if (IsExitDoor)
+        {
+            boxCollider.enabled = false;
+        }
     }
 
     void Update()
@@ -24,10 +28,7 @@ public class DoorTeletransporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (TeletransporterEnabled)
-        {
-            MyLoadScene(scene_name, LoadSceneMode.Single);
-        }
+        MyLoadScene(scene_name, LoadSceneMode.Single);
     }
 
     private void MyLoadScene(string scene_name, LoadSceneMode mode)
@@ -40,7 +41,7 @@ public class DoorTeletransporter : MonoBehaviour
 
     public void Enable()
     {
-        TeletransporterEnabled = true;
+        boxCollider.enabled = true;
 
         if (LockIcon != null)
         {
@@ -50,7 +51,7 @@ public class DoorTeletransporter : MonoBehaviour
 
     public void Disable()
     {
-        TeletransporterEnabled = false;
+        boxCollider.enabled = false;
 
         if (LockIcon != null)
         {
