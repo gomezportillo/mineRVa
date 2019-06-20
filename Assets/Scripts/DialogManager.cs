@@ -106,6 +106,10 @@ public class DialogManager : MonoBehaviour
                 StopSpeaking();
             }
         }
+        else if (speaking == SpeakingState.SPEAKING)
+        {
+            currentLetterIndex = currentDialog.Length - 1;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -163,6 +167,12 @@ public class DialogManager : MonoBehaviour
     public void ShowWinDialog()
     {
         currentDialog = getDialogFileContent("win");
+        StartSpeaking();
+    }
+
+    public void ShowErrorDialog()
+    {
+        currentDialog = getDialogFileContent("error");
         StartSpeaking();
     }
 
