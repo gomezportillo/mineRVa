@@ -59,8 +59,8 @@ public class DialogManager : MonoBehaviour
 
     private void Update()
     {
-        // rotate gurd due to animation
-        Guard.transform.Rotate(0f, -0.005f, 0f, Space.Self);
+        // rotate guard due to animation
+        Guard.transform.Rotate(0f, -0.0025f, 0f, Space.Self);
 
         if (speaking == SpeakingState.SPEAKING)
         {
@@ -168,11 +168,19 @@ public class DialogManager : MonoBehaviour
     {
         currentDialog = getDialogFileContent("win");
         StartSpeaking();
+        Guard.GetComponent<Animator>().Play("Yes");
     }
 
     public void ShowErrorDialog()
     {
         currentDialog = getDialogFileContent("error");
+        StartSpeaking();
+        Guard.GetComponent<Animator>().Play("No");
+    }
+
+    public void ShowCustomDialog(string file_name)
+    {
+        currentDialog = getDialogFileContent(file_name);
         StartSpeaking();
     }
 
@@ -195,7 +203,7 @@ public class DialogManager : MonoBehaviour
             file_content = reader.ReadToEnd();
             reader.Close();
 
-            file_content = file_content.Remove(file_content.Length - 1);
+            file_content = CleanDialogString(file_content);
         }
         else
         {
@@ -204,5 +212,14 @@ public class DialogManager : MonoBehaviour
 
         currentLetterIndex = 0;
         return file_content;
+    }
+
+    private string CleanDialogString(string str)
+    {
+        if (str.Substring(0, str.Length - 1).Equals('\n'))
+        {
+            str.Remove(str.Length - 1);
+        }
+        return str;
     }
 }
