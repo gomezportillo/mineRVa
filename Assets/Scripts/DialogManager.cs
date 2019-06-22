@@ -59,9 +59,12 @@ public class DialogManager : MonoBehaviour
 
     private void Update()
     {
-        // rotate guard due to animation
-        Guard.transform.Rotate(0f, -0.0025f, 0f, Space.Self);
+        UpdateDialogs();
+        UpdateGuardPosition();
+    }
 
+    private void UpdateDialogs()
+    {
         if (speaking == SpeakingState.SPEAKING)
         {
             lastDeltaTime += Time.deltaTime;
@@ -93,6 +96,15 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    private void UpdateGuardPosition()
+    {
+        // rotate guard due to animation
+        if (Guard)
+        {
+            Guard.transform.Rotate(0f, -0.0025f, 0f, Space.Self);
+        }
+    }
+
     private void ControllerEvents_MenuButton(object sender, ControllerInteractionEventArgs e)
     {
         if (speaking == SpeakingState.WAITING_INPUT)
@@ -120,7 +132,7 @@ public class DialogManager : MonoBehaviour
             {
                 if (speaking == SpeakingState.NOT_STARTED)
                 {
-                    Guard.GetComponent<Animator>().Play("Greetings");
+                    TriggerGuardAnimation("Greetings");
                     LoadNextDialog();
                 }
 
@@ -168,14 +180,14 @@ public class DialogManager : MonoBehaviour
     {
         currentDialog = getDialogFileContent("win");
         StartSpeaking();
-        Guard.GetComponent<Animator>().Play("Yes");
+        TriggerGuardAnimation("Yes");
     }
 
     public void ShowErrorDialog()
     {
         currentDialog = getDialogFileContent("error");
         StartSpeaking();
-        Guard.GetComponent<Animator>().Play("No");
+        TriggerGuardAnimation("No");
     }
 
     public void ShowCustomDialog(string file_name)
@@ -196,7 +208,7 @@ public class DialogManager : MonoBehaviour
     {
         string file_path = BASE_PATH + RoomName + '/' + file_name + ".txt";
         string file_content = null;
-        
+
         if (System.IO.File.Exists(file_path))
         {
             StreamReader reader = new StreamReader(file_path);
@@ -221,5 +233,17 @@ public class DialogManager : MonoBehaviour
             str.Remove(str.Length - 1);
         }
         return str;
+    }
+
+    private void TriggerGuardAnimation(string anim_name)
+    {
+        if (Guard)
+        {
+            Animator animator = Guard.GetComponent<Animator>();
+            if (animator)
+            {
+                animator.CrossFade(anim_name, 0.5f);
+            }
+        }
     }
 }

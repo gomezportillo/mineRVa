@@ -173,11 +173,11 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Inbetween bone
-      rotation in copied configuration does not match rotation in animation file:\n\t'MHuman_Chest'
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
+      in configuration does not match rotation in animation file:\n\t'MHuman_Chest'
       : rotation error = 1.257275 deg\n"
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
@@ -428,7 +428,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   importAnimation: 1
-  copyAvatar: 1
+  copyAvatar: 0
   humanDescription:
     serializedVersion: 2
     human:
@@ -849,18 +849,18 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: MorroMan_Idle_MoCap(Clone)
+    - name: Greeting_Stance_MB_v02(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: MHuman
-      parentName: MorroMan_Idle_MoCap(Clone)
+      parentName: Greeting_Stance_MB_v02(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: MHuman_Root
-      parentName: MorroMan_Idle_MoCap(Clone)
+      parentName: Greeting_Stance_MB_v02(Clone)
       position: {x: -0, y: 1.4319261, z: -0.012283817}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
@@ -957,7 +957,7 @@ ModelImporter:
     - name: MHuman_L_Clav
       parentName: MHuman_Chest
       position: {x: -0.046996284, y: -0.07049449, z: 0.25377995}
-      rotation: {x: -0.04969474, y: 0.1583434, z: 0.01343583, w: 0.9860413}
+      rotation: {x: -0.04969473, y: 0.1583434, z: 0.0134358285, w: 0.9860413}
       scale: {x: 1, y: 1, z: 1}
     - name: MHuman_L_Shoulder
       parentName: MHuman_L_Clav
@@ -1047,7 +1047,7 @@ ModelImporter:
     - name: MHuman_L_Ring2
       parentName: MHuman_L_Ring1
       position: {x: -0.04471647, y: 1.9895197e-15, z: 1.4210854e-16}
-      rotation: {x: 0.005158396, y: 0.022072477, z: 0.033013783, w: 0.9991979}
+      rotation: {x: 0.0051583955, y: 0.022072477, z: 0.03301378, w: 0.9991979}
       scale: {x: 1, y: 1, z: 1}
     - name: MHuman_L_Ring3
       parentName: MHuman_L_Ring2
@@ -1062,7 +1062,7 @@ ModelImporter:
     - name: MHuman_L_Thumb1
       parentName: MHuman_L_Hand
       position: {x: 0.024320448, y: -0.0208938, z: 0.027480014}
-      rotation: {x: 0.072049946, y: 0.3875854, z: 0.065368325, w: 0.91668606}
+      rotation: {x: 0.07204995, y: 0.3875854, z: 0.06536833, w: 0.91668606}
       scale: {x: 1, y: 1, z: 1}
     - name: MHuman_L_Thumb2
       parentName: MHuman_L_Thumb1
@@ -1230,8 +1230,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 0
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: de44b5ac9a5789e45a5ecb062ea2f5e0,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 3
   humanoidOversampling: 1
   additionalBone: 0

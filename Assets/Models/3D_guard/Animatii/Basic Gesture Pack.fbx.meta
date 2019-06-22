@@ -476,7 +476,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: 5b805c9715f760947a95441e09edeaae, type: 2}
+    second: {fileID: 2100000, guid: a92a28d6ce5b73d4eaa613f582324324, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -689,22 +689,6 @@ ModelImporter:
         modified: 0
     - boneName: mixamorig:RightHand
       humanName: RightHand
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: mixamorig:LeftToeBase
-      humanName: LeftToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: mixamorig:RightToeBase
-      humanName: RightToes
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}

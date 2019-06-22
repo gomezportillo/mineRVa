@@ -8,21 +8,21 @@ public class TagSnapDetector : MonoBehaviour
     public GameObject DialogManagerHolder;
 
     private DialogManager dialogManagerScript;
-    private DoorTeletransporter door_collider_script;
+    private DoorTeletransporter doorTeletransporterScript;
     private bool win;
 
     private void Awake()
     {
         if (Door != null)
         {
-            door_collider_script = Door.GetComponent<DoorTeletransporter>();
-            if (door_collider_script != null)
+            doorTeletransporterScript = Door.GetComponent<DoorTeletransporter>();
+            if (doorTeletransporterScript != null)
             {
-                door_collider_script.Disable();
+                doorTeletransporterScript.Disable();
             }
             else
             {
-                Debug.Log("Door Collider Script cannot be found on Door object");
+                Debug.Log("Door Teletransporter Script cannot be found on object");
             }
         }
 
@@ -50,7 +50,7 @@ public class TagSnapDetector : MonoBehaviour
     {
         if (e.snappedObject.tag == APPLE_TAG)
         {
-            door_collider_script.Enable();
+            doorTeletransporterScript.Enable();
 
             if (!win && dialogManagerScript)
             {
@@ -66,6 +66,6 @@ public class TagSnapDetector : MonoBehaviour
 
     internal void OnFruitUnsnapped(object sender, SnapDropZoneEventArgs e)
     {
-        door_collider_script.Disable();
+        doorTeletransporterScript.Disable();
     }
 }
