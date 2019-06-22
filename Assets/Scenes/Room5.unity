@@ -7172,10 +7172,9 @@ PrefabInstance:
     - target: {fileID: 135000010323760288, guid: 5d323709f0cbd454196647d9d8f2dd84,
         type: 3}
       propertyPath: m_Radius
-      value: 0.5
+      value: 0.65
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 135000010323760288, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 3}
 --- !u!4 &270901887 stripped
 Transform:
@@ -7218,6 +7217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 390577034}
+  KEY_TAG: Key
 --- !u!1 &271198342
 GameObject:
   m_ObjectHideFlags: 0
