@@ -2,24 +2,30 @@
 
 public class TrashDetector : MonoBehaviour
 {
-    public Transform door;
+    public GameObject door;
+    public GameObject dialogManagerHolder;
 
-    private DoorTeletransporter door_collider_script;
+    private DialogManager dialogManagerScript;
+    private DoorTeletransporter doorTeletransporterScript;
     private readonly string TAG_NAME = "Trash";
 
     private readonly int MAX_TRASH = 4;
     private int trash_counter = 0;
 
-    private void Awake()
+    private void Start()
     {
-        door_collider_script = door.GetComponent<DoorTeletransporter>();
-        if (door_collider_script != null)
+        if (dialogManagerHolder != null)
         {
-            door_collider_script.Disable();
+            dialogManagerScript = dialogManagerHolder.GetComponent<DialogManager>();
         }
-        else
+
+        if (door != null)
         {
-            Debug.Log("Door Collider Script cannot be found on Door object");
+            doorTeletransporterScript = door.GetComponent<DoorTeletransporter>();
+            if (doorTeletransporterScript != null)
+            {
+                doorTeletransporterScript.Disable();
+            }
         }
     }
 
@@ -32,7 +38,8 @@ public class TrashDetector : MonoBehaviour
 
             if (trash_counter == MAX_TRASH)
             {
-                door_collider_script.Enable();
+                doorTeletransporterScript.Enable();
+                dialogManagerScript.ShowWinDialog();
             }
         }
     }
