@@ -3,8 +3,10 @@
 public class ArrowGameManager : MonoBehaviour
 {
     public Transform[] paintings;
-    public int MaxShoots = 6;
+    public int MaxShoots = 10;
+    public GameObject dialogManagerHolder;
 
+    private DialogManager dialogManagerScript;
     public Transform Door;
 
     private int SuccessfulShots = 0;
@@ -33,12 +35,10 @@ public class ArrowGameManager : MonoBehaviour
             }
         }
 
-        //CurrentIndex = GenerateNewIndex();
-        //painting_scripts[CurrentIndex].Enable();
-    }
-
-    void Update()
-    {
+        if (dialogManagerHolder != null)
+        {
+            dialogManagerScript = dialogManagerHolder.GetComponent<DialogManager>();
+        }
     }
 
     // Method to be used by the paintings to inform about an arrow collision
@@ -50,16 +50,7 @@ public class ArrowGameManager : MonoBehaviour
 
         if (SuccessfulShots >= MaxShoots)
         {
-            for (int i = 0; i < painting_scripts.Length; i++)
-            {
-                painting_scripts[i].Win();
-            }
-
-            // Win. Unlock exit
-            if (door_script != null)
-            {
-                door_script.Enable();
-            }
+            Win();
         }
         else
         {
@@ -95,6 +86,25 @@ public class ArrowGameManager : MonoBehaviour
         else
         {
             return new_random;
+        }
+    }
+
+    private void Win()
+    {
+        // make all painting blink yellow
+        for (int i = 0; i < painting_scripts.Length; i++)
+        {
+            painting_scripts[i].Win();
+        }
+
+        if (door_script != null)
+        {
+            door_script.Enable();
+        }
+
+        if (dialogManagerScript != null)
+        {
+            dialogManagerScript.ShowWinDialog();
         }
     }
 }
