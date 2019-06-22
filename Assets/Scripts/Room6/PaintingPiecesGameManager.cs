@@ -3,7 +3,9 @@
 public class PaintingPiecesGameManager : MonoBehaviour
 {
     public GameObject ExitDoor;
+    public GameObject dialogManagerHolder;
 
+    private DialogManager dialogManagerScript;
     private int CurrentFinishedPaintings;
     public GameObject[] PaintingCheckers;
 
@@ -12,7 +14,11 @@ public class PaintingPiecesGameManager : MonoBehaviour
 
     void Awake()
     {
-        // Disable the exit door collider
+        if (dialogManagerHolder)
+        {
+            dialogManagerScript = dialogManagerHolder.GetComponent<DialogManager>();
+        }
+
         if (ExitDoor != null)
         {
             DoorScript = ExitDoor.GetComponent<DoorTeletransporter>();
@@ -36,16 +42,25 @@ public class PaintingPiecesGameManager : MonoBehaviour
     public void PaintingFinished()
     {
         CurrentFinishedPaintings++;
-        Debug.Log("[GM] Painting finished");
 
-        if(CurrentFinishedPaintings == MAX_PAINTINGS)
+        // The guard will encourage the player to stop
+        ShowGuardErrorDialog(CurrentFinishedPaintings);
+
+        if (CurrentFinishedPaintings == MAX_PAINTINGS)
         {
-            Debug.Log("[GM] Win!");
-
             if (DoorScript != null)
             {
                 DoorScript.Enable();
             }
+        }
+    }
+
+    private void ShowGuardErrorDialog(int index)
+    {
+        if (dialogManagerScript)
+        {
+            string error_file = "error" + index.ToString();
+            dialogManagerScript.ShowCustomDialog(error_file);
         }
     }
 }

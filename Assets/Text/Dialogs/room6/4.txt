@@ -1,0 +1,1 @@
+Las luces indican el estado del cuadro; amarillo significa que no está completado.

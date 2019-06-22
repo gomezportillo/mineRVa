@@ -194,6 +194,11 @@ public class DialogManager : MonoBehaviour
     {
         currentDialog = getDialogFileContent(file_name);
         StartSpeaking();
+
+        if (file_name.Contains("error"))
+        {
+            TriggerGuardAnimation("No");
+        }
     }
 
     private bool LoadNextDialog()
