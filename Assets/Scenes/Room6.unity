@@ -5263,6 +5263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitDoor: {fileID: 179109980}
+  dialogManagerHolder: {fileID: 314158049}
   PaintingCheckers:
   - {fileID: 830213088}
   - {fileID: 877762048}
@@ -5538,7 +5539,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: baf999b4b49adbb48938b7e41ecf5074, type: 2}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.6601596
+      value: 2.13
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5546,7 +5547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.98761
+      value: -10.07
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_LocalRotation.x
