@@ -1801,7 +1801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.523077
+      value: 0.32
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2315,7 +2315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1239154989}
-  guard: {fileID: 0}
+  dialogManagerHolder: {fileID: 2105243146}
 --- !u!1 &609424677 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100018, guid: 002da641889e20b4cbe49be34ba186cf,
