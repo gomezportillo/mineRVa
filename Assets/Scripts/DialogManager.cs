@@ -26,6 +26,7 @@ public class DialogManager : MonoBehaviour
 
     public GameObject Guard;
     public GameObject finalDialogActivator;
+    public GameObject DoorToUnlock;
 
     private int currentFileCounter;
     private int currentLetterIndex;
@@ -62,13 +63,6 @@ public class DialogManager : MonoBehaviour
         leftControllerEvents.ButtonTwoReleased -= ControllerEvents_MenuButton;
     }
 
-    private void Start()
-    {
-        if (suspicious_guard)
-        {
-            ActivateSuspiciousAnimation();
-        }
-    }
     private void Update()
     {
         UpdateDialogs();
@@ -180,6 +174,7 @@ public class DialogManager : MonoBehaviour
         DialogBackground.SetActive(false);
         NextDialogIcon.SetActive(false);
         speaking = SpeakingState.FINISHED;
+        DialogFinished();
     }
 
     public void PauseSpeaking()
@@ -223,24 +218,18 @@ public class DialogManager : MonoBehaviour
     private bool LoadNextDialog()
     {
         currentFileCounter++;
-        if (!confessing_guard)
+        string file_name;
+
+        if (confessing_guard)
         {
-            currentDialog = getDialogFileContent(currentFileCounter.ToString());
+            file_name = "confess_" + currentFileCounter.ToString();
         }
         else
         {
-            string confess_file = "confess_" + currentFileCounter;
-            currentDialog = getDialogFileContent(confess_file);
-
-            if (currentDialog == null)
-            {
-                // guard has finished confessing
-                if (finalDialogActivator)
-                {
-                    finalDialogActivator.GetComponent<FinalDialogActivator>().GuardHasEndedConfessing();
-                }
-            }
+            file_name = currentFileCounter.ToString();
         }
+
+        currentDialog = getDialogFileContent(currentFileCounter.ToString());
         return currentDialog != null;
     }
 
@@ -304,5 +293,25 @@ public class DialogManager : MonoBehaviour
     {
         confessing_guard = true;
         currentFileCounter = 0;
+    }
+
+    private void DialogFinished()
+    {
+        switch (RoomName)
+        {
+            case "room7":
+                if (confessing_guard && finalDialogActivator != null)
+                {
+                    finalDialogActivator.GetComponent<FinalDialogActivator>().GuardHasEndedConfessing();
+                }
+                break;
+
+            case "room8":
+                if (DoorToUnlock != null)
+                {
+                    DoorToUnlock.GetComponent<DoorTeletransporter>().Enable();
+                }
+                break;
+        }
     }
 }
