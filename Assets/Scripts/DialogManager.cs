@@ -229,7 +229,7 @@ public class DialogManager : MonoBehaviour
             file_name = currentFileCounter.ToString();
         }
 
-        currentDialog = getDialogFileContent(currentFileCounter.ToString());
+        currentDialog = getDialogFileContent(file_name);
         return currentDialog != null;
     }
 
