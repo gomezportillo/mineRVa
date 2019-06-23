@@ -1639,6 +1639,7 @@ MonoBehaviour:
   DialogObject: {fileID: 778288339}
   Guard: {fileID: 1910068874}
   finalDialogActivator: {fileID: 720645960}
+  DoorToUnlock: {fileID: 0}
 --- !u!135 &317357070
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11887,9 +11888,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 1493428911}
   - {fileID: 308352529}
   - {fileID: 1631924500}
-  - {fileID: 1493428911}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &1361280174
