@@ -9,7 +9,7 @@ public enum SpeakingState
     SPEAKING,
     WAITING_INPUT,
     PAUSED,
-    FINISHED
+    FINISHED,
 }
 
 public class DialogManager : MonoBehaviour
@@ -25,6 +25,7 @@ public class DialogManager : MonoBehaviour
     public TextMeshProUGUI DialogObject;
 
     public GameObject Guard;
+    public GameObject finalDialogActivator;
 
     private int currentFileCounter;
     private int currentLetterIndex;
@@ -34,12 +35,16 @@ public class DialogManager : MonoBehaviour
 
     private readonly string BASE_PATH = "Assets/Text/Dialogs/";
     private readonly string PLAYER_TAG = "[BodyColliderContainer]";
+    private bool suspicious_guard;
+    private bool confessing_guard;
 
     private void Awake()
     {
         currentFileCounter = -1;
         currentLetterIndex = 0;
         speaking = SpeakingState.NOT_STARTED;
+        suspicious_guard = false;
+        confessing_guard = false;
 
         DialogBackground.SetActive(false);
         NextDialogIcon.SetActive(false);
@@ -57,6 +62,13 @@ public class DialogManager : MonoBehaviour
         leftControllerEvents.ButtonTwoReleased -= ControllerEvents_MenuButton;
     }
 
+    private void Start()
+    {
+        if (suspicious_guard)
+        {
+            ActivateSuspiciousAnimation();
+        }
+    }
     private void Update()
     {
         UpdateDialogs();
@@ -132,10 +144,12 @@ public class DialogManager : MonoBehaviour
             {
                 if (speaking == SpeakingState.NOT_STARTED)
                 {
-                    TriggerGuardAnimation("Greetings");
+                    if (!suspicious_guard)
+                    {
+                        TriggerGuardAnimation("Greetings");
+                    }
                     LoadNextDialog();
                 }
-
                 StartSpeaking();
             }
         }
@@ -146,7 +160,7 @@ public class DialogManager : MonoBehaviour
         if (other.name.Contains(PLAYER_TAG))
         {
             if (speaking == SpeakingState.SPEAKING ||
-            speaking == SpeakingState.WAITING_INPUT)
+                speaking == SpeakingState.WAITING_INPUT)
             {
                 PauseSpeaking();
             }
@@ -195,17 +209,38 @@ public class DialogManager : MonoBehaviour
         currentDialog = getDialogFileContent(file_name);
         StartSpeaking();
 
-        if (file_name.Contains("error"))
+        if (file_name.Contains("error") && !suspicious_guard)
         {
             TriggerGuardAnimation("No");
+        }
+
+        if (suspicious_guard && file_name.Contains("error2"))
+        {
+            currentFileCounter++;
         }
     }
 
     private bool LoadNextDialog()
     {
         currentFileCounter++;
-        currentDialog = getDialogFileContent(currentFileCounter.ToString());
+        if (!confessing_guard)
+        {
+            currentDialog = getDialogFileContent(currentFileCounter.ToString());
+        }
+        else
+        {
+            string confess_file = "confess_" + currentFileCounter;
+            currentDialog = getDialogFileContent(confess_file);
 
+            if (currentDialog == null)
+            {
+                // guard has finished confessing
+                if (finalDialogActivator)
+                {
+                    finalDialogActivator.GetComponent<FinalDialogActivator>().GuardHasEndedConfessing();
+                }
+            }
+        }
         return currentDialog != null;
     }
 
@@ -250,5 +285,24 @@ public class DialogManager : MonoBehaviour
                 animator.CrossFade(anim_name, 0.5f);
             }
         }
+    }
+
+    public void ActivateSuspiciousAnimation()
+    {
+        suspicious_guard = true;
+
+        Animator animator = Guard.GetComponent<Animator>();
+        if (animator)
+        {
+            animator.CrossFade("Suspicious", 0.5f);
+            animator.SetBool("isIdle", false);
+            animator.SetBool("isSuspicious", true);
+        }
+    }
+
+    public void ActivateConfession()
+    {
+        confessing_guard = true;
+        currentFileCounter = 0;
     }
 }
