@@ -2,6 +2,7 @@
 using UnityEngine;
 using VRTK;
 using TMPro;
+using System;
 
 public enum SpeakingState
 {
@@ -19,6 +20,8 @@ public class DialogManager : MonoBehaviour
 
     public VRTK_ControllerEvents rightControllerEvents;
     public VRTK_ControllerEvents leftControllerEvents;
+
+    public AudioClip manVoice, womanVoice, ringSound;
 
     public GameObject DialogBackground;
     public GameObject NextDialogIcon;
@@ -127,6 +130,7 @@ public class DialogManager : MonoBehaviour
         else if (speaking == SpeakingState.SPEAKING)
         {
             currentLetterIndex = currentDialog.Length - 1;
+            GetComponent<AudioSource>().Stop();
         }
     }
 
@@ -251,8 +255,32 @@ public class DialogManager : MonoBehaviour
             speaking = SpeakingState.FINISHED;
         }
 
+        PlaySoundEffect(file_content);
+
         currentLetterIndex = 0;
         return file_content;
+    }
+
+    private void PlaySoundEffect(string dialog)
+    {
+        if (dialog != null)
+        {
+            AudioSource audioSource = GetComponent<AudioSource>();
+            audioSource.Stop();
+
+            if (dialog.ToLower().Contains("ring"))
+            {
+                audioSource.PlayOneShot(ringSound, 0.05f);
+            }
+            else if (RoomName == "room0" || RoomName == "room8")
+            {
+                audioSource.GetComponent<AudioSource>().PlayOneShot(womanVoice, 0.03f);
+            }
+            else
+            {
+                audioSource.GetComponent<AudioSource>().PlayOneShot(manVoice, 0.04f);
+            }
+        }
     }
 
     private string CleanDialogString(string str)
