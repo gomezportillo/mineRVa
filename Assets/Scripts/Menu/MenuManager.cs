@@ -12,6 +12,8 @@ public class MenuManager : MonoBehaviour
     public GameObject menuBackground;
     public GameObject creditsBackground;
 
+    public AudioClip soundEffect;
+
     private string FIRST_SCENE = "room0";
 
     private void Start()
@@ -32,11 +34,12 @@ public class MenuManager : MonoBehaviour
         {
             exitButton.onClick.AddListener(OnClickExit);
         }
-        
+
     }
 
     private void OnClickPlay()
     {
+        PlaySoundEffect();
         SceneManager.LoadScene(FIRST_SCENE, LoadSceneMode.Single);
     }
 
@@ -55,9 +58,22 @@ public class MenuManager : MonoBehaviour
     private void OnClickExit()
     {
         #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
         #else
-                Application.Quit();
+            Application.Quit();
         #endif
+    }
+
+    private void PlaySoundEffect()
+    {
+        AudioSource audioSource = GetComponent<AudioSource>();
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            if (soundEffect != null)
+            {
+                audioSource.PlayOneShot(soundEffect);
+            }
+        }
     }
 }
