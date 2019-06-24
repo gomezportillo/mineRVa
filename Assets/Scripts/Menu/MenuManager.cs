@@ -45,18 +45,21 @@ public class MenuManager : MonoBehaviour
 
     private void OnClickCredits()
     {
+        PlaySoundEffect();
         menuBackground.SetActive(false);
         creditsBackground.SetActive(true);
     }
 
     private void OnClickCreditsBack()
     {
+        PlaySoundEffect();
         creditsBackground.SetActive(false);
         menuBackground.SetActive(true);
     }
 
     private void OnClickExit()
     {
+        PlaySoundEffect();
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
         #else
