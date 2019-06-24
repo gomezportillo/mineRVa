@@ -13,11 +13,15 @@ public class PaintingDescriptionManager : MonoBehaviour
 {
     public string roomFolderName;
     public string descriptionFile;
+
     public VRTK_ControllerEvents rightControllerEvents;
     public VRTK_ControllerEvents leftControllerEvents;
+
     public GameObject AvailabilityIcon;
     public GameObject TextBackground;
     public TextMeshProUGUI TextObject;
+
+    public AudioClip soundEffect;
 
     private readonly string BASE_PATH = "Assets/Text/Painting_descriptions/";
     private readonly string PLAYER_TAG = "[BodyColliderContainer]";
@@ -32,7 +36,7 @@ public class PaintingDescriptionManager : MonoBehaviour
         {
             AvailabilityIcon.SetActive(false);
         }
-        
+
         if (TextBackground != null)
         {
             TextBackground.SetActive(false);
@@ -82,6 +86,7 @@ public class PaintingDescriptionManager : MonoBehaviour
             TextObject.text = paintingDescription;
             AvailabilityIcon.SetActive(false);
             TextBackground.SetActive(true);
+            PlaySoundEffect();
         }
     }
 
@@ -91,6 +96,16 @@ public class PaintingDescriptionManager : MonoBehaviour
         if (player_near)
         {
             AvailabilityIcon.SetActive(true);
+        }
+    }
+
+    private void PlaySoundEffect()
+    {
+        AudioSource audioSource = GetComponent<AudioSource>();
+        if (audioSource)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(soundEffect, 0.2f);
         }
     }
 
