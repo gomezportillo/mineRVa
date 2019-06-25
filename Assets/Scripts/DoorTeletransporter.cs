@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class DoorTeletransporter : MonoBehaviour
 {
-    public string scene_name;
+    public string sceneName;
     public GameObject LockIcon;
     public bool IsExitDoor = false;
 
@@ -23,7 +23,7 @@ public class DoorTeletransporter : MonoBehaviour
     {
         if (IsExitDoor && Input.GetKeyDown(KeyCode.N)) // Next scene
         {
-            MyLoadScene(scene_name, LoadSceneMode.Single);
+            MyLoadScene(sceneName, LoadSceneMode.Single);
         }
     }
 
@@ -31,7 +31,7 @@ public class DoorTeletransporter : MonoBehaviour
     {
         if (other.name.Contains(PLAYER_TAG))
         {
-            MyLoadScene(scene_name, LoadSceneMode.Single);
+            MyLoadScene(sceneName, LoadSceneMode.Single);
         }
     }
 

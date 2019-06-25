@@ -15,20 +15,20 @@ public class PaintingChecker : MonoBehaviour
 
     private Transform Light;
 
-    private int CurrentPieces;
-    private int CorrectPieces;
-    private bool CorrectlyFinished;
-    private string SelfName;
+    private int currentPieces;
+    private int correctPieces;
+    private bool isCorrectlyFinished;
+    private string selfName;
 
-    private PaintingPiecesGameManager GameManagerScript;
-    public VRTK_SnapDropZone[] SnapDropZones;
+    private PaintingPiecesGameManager gameManagerScript;
+    public VRTK_SnapDropZone[] snapDropZones;
 
     private readonly int MAX_PIECES = 4;
 
     void Awake()
     {
-        CurrentPieces = CorrectPieces = 0;
-        CorrectlyFinished = false;
+        currentPieces = correctPieces = 0;
+        isCorrectlyFinished = false;
 
         if (Bulb != null)
         {
@@ -38,21 +38,21 @@ public class PaintingChecker : MonoBehaviour
 
         if (GameManager != null)
         {
-            GameManagerScript = GameManager.GetComponent<PaintingPiecesGameManager>();
+            gameManagerScript = GameManager.GetComponent<PaintingPiecesGameManager>();
         }
 
-        foreach (VRTK_SnapDropZone sdz in SnapDropZones)
+        foreach (VRTK_SnapDropZone sdz in snapDropZones)
         {
             sdz.ObjectSnappedToDropZone += OnPieceSnapped;
             sdz.ObjectUnsnappedFromDropZone += OnPieceUnsnapped;
         }
 
-        SelfName = this.name.Split('_')[1].ToLower();
+        selfName = this.name.Split('_')[1].ToLower();
     }
 
     void OnDestroy()
     {
-        foreach (VRTK_SnapDropZone sdz in SnapDropZones)
+        foreach (VRTK_SnapDropZone sdz in snapDropZones)
         {
             sdz.ObjectSnappedToDropZone -= OnPieceSnapped;
             sdz.ObjectUnsnappedFromDropZone -= OnPieceUnsnapped;
@@ -61,9 +61,9 @@ public class PaintingChecker : MonoBehaviour
 
     internal void OnPieceSnapped(object sender, SnapDropZoneEventArgs e)
     {
-        if (!CorrectlyFinished)
+        if (!isCorrectlyFinished)
         {
-            CurrentPieces++;
+            currentPieces++;
 
             string piece_name = e.snappedObject.name.Split('_')[0].ToLower();
             string sdz_number = Regex.Match(sender.ToString(), @"\d+").Value;
@@ -71,18 +71,18 @@ public class PaintingChecker : MonoBehaviour
 
             Debug.Log("Snapped piece #" + snapped_number + " in SDZ #" + sdz_number);
 
-            bool correct = (piece_name == SelfName) && (sdz_number == snapped_number);
+            bool correct = (piece_name == selfName) && (sdz_number == snapped_number);
             if (correct)
             {
-                CorrectPieces++;
-                if (CorrectPieces == MAX_PIECES)
+                correctPieces++;
+                if (correctPieces == MAX_PIECES)
                 {
                     ChangeBulbColor(LightGreen);
-                    CorrectlyFinished = true;
-                    GameManagerScript.PaintingFinished();
+                    isCorrectlyFinished = true;
+                    gameManagerScript.PaintingFinished();
 
                     // locking pieces in place disabling its box colliders
-                    foreach (VRTK_SnapDropZone sdz in SnapDropZones)
+                    foreach (VRTK_SnapDropZone sdz in snapDropZones)
                     {
                         GameObject piece = sdz.GetCurrentSnappedObject();
                         if (piece != null)
@@ -94,7 +94,7 @@ public class PaintingChecker : MonoBehaviour
                 }
             }
 
-            if (CurrentPieces == MAX_PIECES && !CorrectlyFinished)
+            if (currentPieces == MAX_PIECES && !isCorrectlyFinished)
             {
                 ChangeBulbColor(LightRed);
             }
@@ -103,9 +103,9 @@ public class PaintingChecker : MonoBehaviour
 
     internal void OnPieceUnsnapped(object sender, SnapDropZoneEventArgs e)
     {
-        if (!CorrectlyFinished)
+        if (!isCorrectlyFinished)
         {
-            CurrentPieces--;
+            currentPieces--;
 
             string piece_name = e.snappedObject.name.Split('_')[0].ToLower();
             string sdz_number = Regex.Match(sender.ToString(), @"\d+").Value;
@@ -113,10 +113,10 @@ public class PaintingChecker : MonoBehaviour
 
             Debug.Log("Unsnapped piece #" + snapped_number + " in SDZ #" + sdz_number);
 
-            bool correct = (piece_name == SelfName) && (sdz_number == snapped_number);
+            bool correct = (piece_name == selfName) && (sdz_number == snapped_number);
             if (correct)
             {
-                CorrectPieces--;
+                correctPieces--;
             }
 
             // In case the light was red
@@ -126,7 +126,7 @@ public class PaintingChecker : MonoBehaviour
 
     private void ChangeBulbColor(Material m)
     {
-        if (!CorrectlyFinished)
+        if (!isCorrectlyFinished)
         {
             if (Bulb != null)
             {

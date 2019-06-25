@@ -10,7 +10,7 @@ public class TrashDetector : MonoBehaviour
     private readonly string TAG_NAME = "Trash";
 
     private readonly int MAX_TRASH = 4;
-    private int trash_counter = 0;
+    private int trashCounter = 0;
 
     private void Start()
     {
@@ -34,9 +34,9 @@ public class TrashDetector : MonoBehaviour
         if (other.tag == TAG_NAME)
         {
             Debug.Log("+1 trash");
-            trash_counter++;
+            trashCounter++;
 
-            if (trash_counter == MAX_TRASH)
+            if (trashCounter == MAX_TRASH)
             {
                 doorTeletransporterScript.Enable();
                 dialogManagerScript.ShowWinDialog();
@@ -48,7 +48,7 @@ public class TrashDetector : MonoBehaviour
     {
         if (other.tag == TAG_NAME)
         {
-            trash_counter--;
+            trashCounter--;
         }
     }
 }

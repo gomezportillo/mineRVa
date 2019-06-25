@@ -2,20 +2,20 @@
 
 public class BowInformer : MonoBehaviour
 {
-    public Transform GameManagerHolder;
+    public GameObject gameManagerHolder;
 
-    private ArrowGameManager GameManagerScript;
+    private ArrowGameManager gameManagerScript;
 
     private void Awake()
     {
-        GameManagerScript = GameManagerHolder.GetComponent<ArrowGameManager>();
+        gameManagerScript = gameManagerHolder.GetComponent<ArrowGameManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.name != "Table")
         {
-            GameManagerScript.Enable();
+            gameManagerScript.Enable();
         }
     }
 }

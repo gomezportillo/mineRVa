@@ -22,18 +22,18 @@
         public GameObject TextDescriptorOpen;
         public GameObject TextDescriptorClosed;
 
-        public Transform door_left;
-        public Transform door_right;
+        public Transform doorLeft;
+        public Transform doorRight;
 
-        private Vector3 left_open_position = new Vector3(1, 0, -9);
-        private Vector3 right_open_position = new Vector3(-1, 0, -9);
+        private Vector3 leftOpenPosition = new Vector3(1, 0, -9);
+        private Vector3 rightOpenPosition = new Vector3(-1, 0, -9);
 
-        private Vector3 left_close_position = new Vector3(0, 0, -9);
-        private Vector3 right_close_position = new Vector3(0, 0, -9);
+        private Vector3 leftClosePosition = new Vector3(0, 0, -9);
+        private Vector3 rightClosePosition = new Vector3(0, 0, -9);
 
-        public float open_speed;
+        public float openSpeed;
 
-        private bool door_opened = false;
+        private bool doorOpen = false;
 
         protected virtual void OnEnable()
         {
@@ -64,14 +64,14 @@
         protected virtual void MaxLimitReached(object sender, ControllableEventArgs e)
         {
             SetOption(true, openText);
-            door_opened = true;
+            doorOpen = true;
             ToggleTextDescriptors();
         }
 
         protected virtual void MinLimitReached(object sender, ControllableEventArgs e)
         {
             SetOption(false, closedText);
-            door_opened = false;
+            doorOpen = false;
             ToggleTextDescriptors();
         }
 
@@ -106,32 +106,32 @@
         {
             if (Input.GetKeyDown(KeyCode.O))
             {
-                door_opened = !door_opened;
+                doorOpen = !doorOpen;
 
                 ToggleTextDescriptors();
             }
 
-            Vector3 left_position;
-            Vector3 right_position;
+            Vector3 leftPosition;
+            Vector3 rightPosition;
 
-            if (door_opened)
+            if (doorOpen)
             {
-                left_position = left_open_position;
-                right_position = right_open_position;
+                leftPosition = leftOpenPosition;
+                rightPosition = rightOpenPosition;
             }
             else
             {
-                left_position = left_close_position;
-                right_position = right_close_position;
+                leftPosition = leftClosePosition;
+                rightPosition = rightClosePosition;
             }
 
-            door_left.position = Vector3.Lerp(door_left.position,
-                                              left_position,
-                                              Time.deltaTime * open_speed);
+            doorLeft.position = Vector3.Lerp(doorLeft.position,
+                                              leftPosition,
+                                              Time.deltaTime * openSpeed);
 
-            door_right.position = Vector3.Lerp(door_right.position,
-                                               right_position,
-                                               Time.deltaTime * open_speed);
+            doorRight.position = Vector3.Lerp(doorRight.position,
+                                               rightPosition,
+                                               Time.deltaTime * openSpeed);
 
         }
 

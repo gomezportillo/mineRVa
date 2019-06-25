@@ -3293,7 +3293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Room3
+  sceneName: Room3
   LockIcon: {fileID: 0}
   IsExitDoor: 0
 --- !u!1 &875187823
@@ -3615,7 +3615,6 @@ GameObject:
   m_Component:
   - component: {fileID: 920728512}
   - component: {fileID: 920728514}
-  - component: {fileID: 920728513}
   m_Layer: 0
   m_Name: DoorControl
   m_TagString: Untagged
@@ -3640,22 +3639,6 @@ Transform:
   m_Father: {fileID: 1977726970}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &920728513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 920728511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a22b451f6097595439a10739ec0d05d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllable: {fileID: 920728514}
-  displayText: {fileID: 0}
-  outputOnMax: 
-  outputOnMin: 
 --- !u!114 &920728514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7875,7 +7858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Room1
+  sceneName: Room1
   LockIcon: {fileID: 0}
   IsExitDoor: 0
 --- !u!65 &1816433377
@@ -8653,9 +8636,9 @@ MonoBehaviour:
   closedText: Cerrado
   TextDescriptorOpen: {fileID: 1032823316}
   TextDescriptorClosed: {fileID: 1589679251}
-  door_left: {fileID: 678623122}
-  door_right: {fileID: 1085366262}
-  open_speed: 0.5
+  doorLeft: {fileID: 678623122}
+  doorRight: {fileID: 1085366262}
+  openSpeed: 0.5
 --- !u!114 &2037537434
 MonoBehaviour:
   m_ObjectHideFlags: 0

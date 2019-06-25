@@ -7,12 +7,12 @@ public class ArrowGameManager : MonoBehaviour
     public GameObject dialogManagerHolder;
 
     private DialogManager dialogManagerScript;
-    public Transform Door;
+    public GameObject exitDoor;
 
-    private int SuccessfulShots = 0;
-    private int CurrentIndex = 0;
+    private int successfulShots = 0;
+    private int currentIndex = 0;
     private PaintingColliderDetector[] painting_scripts;
-    private DoorTeletransporter door_script;
+    private DoorTeletransporter doorTeletransporterScript;
     private bool started = false;
 
     void Start()
@@ -26,12 +26,12 @@ public class ArrowGameManager : MonoBehaviour
         }
 
         // Disable the exit door collider
-        if (Door != null)
+        if (exitDoor != null)
         {
-            door_script = Door.GetComponent<DoorTeletransporter>();
-            if (door_script != null)
+            doorTeletransporterScript = exitDoor.GetComponent<DoorTeletransporter>();
+            if (doorTeletransporterScript != null)
             {
-                door_script.Disable();
+                doorTeletransporterScript.Disable();
             }
         }
 
@@ -45,17 +45,17 @@ public class ArrowGameManager : MonoBehaviour
     public void AnnounceDetectedArrow(string painting_name)
     {
         Debug.Log(painting_name);
-        painting_scripts[CurrentIndex].Disable();
-        SuccessfulShots++;
+        painting_scripts[currentIndex].Disable();
+        successfulShots++;
 
-        if (SuccessfulShots >= MaxShoots)
+        if (successfulShots >= MaxShoots)
         {
             Win();
         }
         else
         {
-            CurrentIndex = GenerateNewIndex();
-            painting_scripts[CurrentIndex].Enable();
+            currentIndex = GenerateNewIndex();
+            painting_scripts[currentIndex].Enable();
         }
     }
 
@@ -64,8 +64,8 @@ public class ArrowGameManager : MonoBehaviour
     {
         if (!started)
         {
-            CurrentIndex = GenerateNewIndex();
-            painting_scripts[CurrentIndex].Enable();
+            currentIndex = GenerateNewIndex();
+            painting_scripts[currentIndex].Enable();
             started = true;
         }
     }
@@ -73,11 +73,11 @@ public class ArrowGameManager : MonoBehaviour
     // Get a new painting index to be the next one to be shooted
     private int GenerateNewIndex()
     {
-        int new_random = CurrentIndex;
+        int new_random = currentIndex;
 
         if (paintings.Length > 1)
         {
-            while (new_random == CurrentIndex)
+            while (new_random == currentIndex)
             {
                 new_random = Random.Range(0, paintings.Length);
             }
@@ -97,9 +97,9 @@ public class ArrowGameManager : MonoBehaviour
             painting_scripts[i].Win();
         }
 
-        if (door_script != null)
+        if (doorTeletransporterScript != null)
         {
-            door_script.Enable();
+            doorTeletransporterScript.Enable();
         }
 
         if (dialogManagerScript != null)

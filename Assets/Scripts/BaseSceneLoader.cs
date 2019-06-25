@@ -3,13 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class BaseSceneLoader : MonoBehaviour
 {
-    protected string base_scene_name = "Base_room";
+    protected string baseSceneName = "Base_room";
 
     void Start()
     {
-        if (!SceneManager.GetSceneByName(base_scene_name).isLoaded)
+        if (!SceneManager.GetSceneByName(baseSceneName).isLoaded)
         {
-            SceneManager.LoadScene(base_scene_name, LoadSceneMode.Additive);
+            SceneManager.LoadScene(baseSceneName, LoadSceneMode.Additive);
         }
     }
 }

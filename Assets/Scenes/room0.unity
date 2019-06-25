@@ -6599,7 +6599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Room1
+  sceneName: Room1
   LockIcon: {fileID: 0}
   IsExitDoor: 0
 --- !u!65 &2068917863

@@ -23,14 +23,14 @@ public class PaintingColliderDetector : MonoBehaviour
     private readonly float FadingOutDuration = 1.5f;
 
     private PaintingState state;
-    private float fading_lerp;
-    private ArrowGameManager GameManagerScript;
+    private float fadingLerp;
+    private ArrowGameManager gameManagerScript;
 
     private void Awake()
     {
         state = PaintingState.Disabled;
-        fading_lerp = 0;
-        GameManagerScript = GameManagerHolder.GetComponent<ArrowGameManager>();
+        fadingLerp = 0;
+        gameManagerScript = GameManagerHolder.GetComponent<ArrowGameManager>();
     }
 
     private void Update()
@@ -41,16 +41,16 @@ public class PaintingColliderDetector : MonoBehaviour
                 break;
 
             case PaintingState.FadingToDisabled:
-                if (fading_lerp <= 1)
+                if (fadingLerp <= 1)
                 {
-                    fading_lerp += Time.deltaTime / FadingOutDuration;
+                    fadingLerp += Time.deltaTime / FadingOutDuration;
 
                     GetComponent<Renderer>().materials[0].Lerp(SuccessMaterial,
                                                                PaintingMaterial,
-                                                               fading_lerp);
+                                                               fadingLerp);
                     GetComponent<Renderer>().materials[1].Lerp(SuccessMaterial,
                                                                FrameMaterial,
-                                                               fading_lerp);
+                                                               fadingLerp);
                 }
                 else
                 {
@@ -59,20 +59,20 @@ public class PaintingColliderDetector : MonoBehaviour
                 break;
 
             case PaintingState.Enabled:
-                fading_lerp = Mathf.PingPong(Time.time, FadingInDuration) / FadingInDuration;
+                fadingLerp = Mathf.PingPong(Time.time, FadingInDuration) / FadingInDuration;
                 GetComponent<Renderer>().materials[1].Lerp(LightMaterial,
                                                            FrameMaterial,
-                                                           fading_lerp);
+                                                           fadingLerp);
                 break;
 
             case PaintingState.Winning:
                 GetComponent<Renderer>().materials[0].Lerp(WinMaterial,
                                                            PaintingMaterial,
-                                                           fading_lerp);
+                                                           fadingLerp);
                 GetComponent<Renderer>().materials[1].Lerp(WinMaterial,
                                                            FrameMaterial,
-                                                           fading_lerp);
-                fading_lerp += Time.deltaTime / FadingOutDuration;
+                                                           fadingLerp);
+                fadingLerp += Time.deltaTime / FadingOutDuration;
                 break;
         }
     }
@@ -82,7 +82,7 @@ public class PaintingColliderDetector : MonoBehaviour
         if (state != PaintingState.Disabled && other.tag == TAG_NAME)
         {
             Debug.Log("Arrow dectected!");
-            GameManagerScript.AnnounceDetectedArrow(this.name);
+            gameManagerScript.AnnounceDetectedArrow(this.name);
         }
     }
 
@@ -94,12 +94,12 @@ public class PaintingColliderDetector : MonoBehaviour
     public void Disable()
     {
         state = PaintingState.FadingToDisabled;
-        fading_lerp = 0;
+        fadingLerp = 0;
     }
 
     public void Win()
     {
         state = PaintingState.Winning;
-        fading_lerp = 0;
+        fadingLerp = 0;
     }
 }

@@ -6,11 +6,11 @@ public class PaintingPiecesGameManager : MonoBehaviour
     public GameObject dialogManagerHolder;
 
     private DialogManager dialogManagerScript;
-    private int CurrentFinishedPaintings;
-    public GameObject[] PaintingCheckers;
+    private int currentFinishedPaintings;
+    public GameObject[] paintingCheckers;
 
     private readonly int MAX_PAINTINGS = 4;
-    private DoorTeletransporter DoorScript;
+    private DoorTeletransporter doorTeletransporterScript;
 
     void Awake()
     {
@@ -21,19 +21,19 @@ public class PaintingPiecesGameManager : MonoBehaviour
 
         if (ExitDoor != null)
         {
-            DoorScript = ExitDoor.GetComponent<DoorTeletransporter>();
-            if (DoorScript != null)
+            doorTeletransporterScript = ExitDoor.GetComponent<DoorTeletransporter>();
+            if (doorTeletransporterScript != null)
             {
-                DoorScript.Disable();
+                doorTeletransporterScript.Disable();
             }
         }
 
-        CurrentFinishedPaintings = 0;
+        currentFinishedPaintings = 0;
     }
 
     public void StartGame()
     {
-        foreach (GameObject script in PaintingCheckers)
+        foreach (GameObject script in paintingCheckers)
         {
             script.GetComponent<PaintingChecker>().TurnOnLight();
         }
@@ -41,16 +41,16 @@ public class PaintingPiecesGameManager : MonoBehaviour
 
     public void PaintingFinished()
     {
-        CurrentFinishedPaintings++;
+        currentFinishedPaintings++;
 
         // The guard will encourage the player to stop
-        ShowGuardErrorDialog(CurrentFinishedPaintings);
+        ShowGuardErrorDialog(currentFinishedPaintings);
 
-        if (CurrentFinishedPaintings == MAX_PAINTINGS)
+        if (currentFinishedPaintings == MAX_PAINTINGS)
         {
-            if (DoorScript != null)
+            if (doorTeletransporterScript != null)
             {
-                DoorScript.Enable();
+                doorTeletransporterScript.Enable();
             }
         }
     }

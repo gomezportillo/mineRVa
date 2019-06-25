@@ -2,21 +2,21 @@
 
 public class GameStarter : MonoBehaviour
 {
-    public Transform GameManagerHolder;
+    public GameObject gameManagerHolder;
 
-    private PaintingPiecesGameManager GameManagerScript;
+    private PaintingPiecesGameManager gameManagerScript;
     private readonly string PLAYER_TAG = "[BodyColliderContainer]";
 
     private void Awake()
     {
-        GameManagerScript = GameManagerHolder.GetComponent<PaintingPiecesGameManager>();
+        gameManagerScript = gameManagerHolder.GetComponent<PaintingPiecesGameManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.name.Contains(PLAYER_TAG))
         {
-            GameManagerScript.StartGame();
+            gameManagerScript.StartGame();
             GetComponent<SphereCollider>().enabled = false;
         }
     }

@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ac1f3256eadb9449046a79eae0e2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManagerHolder: {fileID: 756046204}
+  gameManagerHolder: {fileID: 756046194}
 --- !u!65 &273611182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3692,7 +3692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Room5
+  sceneName: Room5
   LockIcon: {fileID: 1919326501}
   IsExitDoor: 1
 --- !u!114 &756046193
@@ -3707,7 +3707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Room3
+  sceneName: Room3
   LockIcon: {fileID: 0}
   IsExitDoor: 0
 --- !u!1 &756046194 stripped
@@ -3963,7 +3963,7 @@ MonoBehaviour:
   - {fileID: 756046217}
   MaxShoots: 1
   dialogManagerHolder: {fileID: 1573218095}
-  Door: {fileID: 756046226}
+  exitDoor: {fileID: 756046177}
 --- !u!114 &756046239
 MonoBehaviour:
   m_ObjectHideFlags: 0

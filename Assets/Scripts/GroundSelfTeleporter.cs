@@ -6,15 +6,15 @@ public class GroundSelfTeleporter : MonoBehaviour
 
     private Vector3 initial_position;
     private Quaternion initial_rotation;
-    private Vector3 initial_velocity;
-    private Vector3 initial_ang_velocity;
+    private Vector3 initialVelocity;
+    private Vector3 initialAngularVelocity;
 
     private void Awake()
     {
         initial_position = transform.position;
         initial_rotation = transform.rotation;
-        initial_velocity = new Vector3(0, 0, 0);
-        initial_ang_velocity = new Vector3(0, 0, 0);
+        initialVelocity = new Vector3(0, 0, 0);
+        initialAngularVelocity = new Vector3(0, 0, 0);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,8 +25,8 @@ public class GroundSelfTeleporter : MonoBehaviour
 
             transform.position = initial_position;
             transform.rotation = initial_rotation;
-            transform.GetComponent<Rigidbody>().velocity = initial_velocity;
-            transform.GetComponent<Rigidbody>().angularVelocity = initial_ang_velocity;
+            transform.GetComponent<Rigidbody>().velocity = initialVelocity;
+            transform.GetComponent<Rigidbody>().angularVelocity = initialAngularVelocity;
         }
     }
 }

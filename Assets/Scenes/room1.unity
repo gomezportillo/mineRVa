@@ -6153,7 +6153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Room2
+  sceneName: Room2
   LockIcon: {fileID: 1194411208}
   IsExitDoor: 1
 --- !u!65 &1404670573
@@ -9815,7 +9815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3a6b73321fe6848b92d11c25f490f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene_name: Room0
+  sceneName: Room0
   LockIcon: {fileID: 0}
   IsExitDoor: 0
 --- !u!65 &2137057525

@@ -39,16 +39,16 @@ public class DialogManager : MonoBehaviour
 
     private readonly string BASE_PATH = "Assets/Text/Dialogs/";
     private readonly string PLAYER_TAG = "[BodyColliderContainer]";
-    private bool suspicious_guard;
-    private bool confessing_guard;
+    private bool suspiciousGuard;
+    private bool confessingGuard;
 
     private void Awake()
     {
         currentFileCounter = -1;
         currentLetterIndex = 0;
         speaking = SpeakingState.NOT_STARTED;
-        suspicious_guard = false;
-        confessing_guard = false;
+        suspiciousGuard = false;
+        confessingGuard = false;
 
         DialogBackground.SetActive(false);
         NextDialogIcon.SetActive(false);
@@ -142,7 +142,7 @@ public class DialogManager : MonoBehaviour
             {
                 if (speaking == SpeakingState.NOT_STARTED)
                 {
-                    if (!suspicious_guard)
+                    if (!suspiciousGuard)
                     {
                         TriggerGuardAnimation("Greetings");
                     }
@@ -208,12 +208,12 @@ public class DialogManager : MonoBehaviour
         currentDialog = getDialogFileContent(file_name);
         StartSpeaking();
 
-        if (file_name.Contains("error") && !suspicious_guard)
+        if (file_name.Contains("error") && !suspiciousGuard)
         {
             TriggerGuardAnimation("No");
         }
 
-        if (suspicious_guard && file_name.Contains("error2"))
+        if (suspiciousGuard && file_name.Contains("error2"))
         {
             currentFileCounter++;
         }
@@ -224,7 +224,7 @@ public class DialogManager : MonoBehaviour
         currentFileCounter++;
         string file_name;
 
-        if (confessing_guard)
+        if (confessingGuard)
         {
             file_name = "confess_" + currentFileCounter.ToString();
         }
@@ -306,7 +306,7 @@ public class DialogManager : MonoBehaviour
 
     public void ActivateSuspiciousAnimation()
     {
-        suspicious_guard = true;
+        suspiciousGuard = true;
 
         Animator animator = Guard.GetComponent<Animator>();
         if (animator)
@@ -319,7 +319,7 @@ public class DialogManager : MonoBehaviour
 
     public void ActivateConfession()
     {
-        confessing_guard = true;
+        confessingGuard = true;
         currentFileCounter = 0;
     }
 
@@ -328,7 +328,7 @@ public class DialogManager : MonoBehaviour
         switch (RoomName)
         {
             case "room7":
-                if (confessing_guard && finalDialogActivator != null)
+                if (confessingGuard && finalDialogActivator != null)
                 {
                     finalDialogActivator.GetComponent<FinalDialogActivator>().GuardHasEndedConfessing();
                 }

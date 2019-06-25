@@ -12,8 +12,8 @@ public class FinalDialogActivator : MonoBehaviour
     public Image faderImage;
 
     private DialogManager dialogManagerScript;
-    private bool confessed;
-    private bool fading_to_black;
+    private bool isConfessed;
+    private bool isFadingToBlack;
     private const int TIME_TO_FINAL_ROOM = 3;
 
     void Awake()
@@ -50,13 +50,13 @@ public class FinalDialogActivator : MonoBehaviour
         {
             dialogManagerScript.ActivateSuspiciousAnimation();
         }
-        confessed = false;
-        fading_to_black = false;
+        isConfessed = false;
+        isFadingToBlack = false;
     }
 
     private void Update()
     {
-        if (fading_to_black)
+        if (isFadingToBlack)
         {
             faderImage.GetComponent<Image>().color = Color.Lerp(faderImage.GetComponent<Image>().color,
                                                                 Color.black,
@@ -76,11 +76,11 @@ public class FinalDialogActivator : MonoBehaviour
 
     private void PaintingGrabbed(object sender, InteractableObjectEventArgs e)
     {
-        if (!confessed)
+        if (!isConfessed)
         {
             ShowGuardDialog("error-painting");
             dialogManagerScript.ActivateConfession();
-            confessed = true;
+            isConfessed = true;
         }
     }
 
@@ -95,7 +95,7 @@ public class FinalDialogActivator : MonoBehaviour
     public void GuardHasEndedConfessing()
     {
         Debug.Log("FINISHED CONFESSING");
-        fading_to_black = true;
+        isFadingToBlack = true;
         Invoke("GoToFinalRoom", TIME_TO_FINAL_ROOM);
     }
 

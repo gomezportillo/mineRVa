@@ -26,7 +26,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     private readonly string BASE_PATH = "Assets/Text/Painting_descriptions/";
     private readonly string PLAYER_TAG = "[BodyColliderContainer]";
 
-    private bool player_near = false;
+    private bool playerIsNear = false;
     private string paintingDescription;
 
     private void Awake()
@@ -81,7 +81,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     }
     private void ControllerEvents_ButtonTwoPressed(object sender, ControllerInteractionEventArgs e)
     {
-        if (player_near)
+        if (playerIsNear)
         {
             TextObject.text = paintingDescription;
             AvailabilityIcon.SetActive(false);
@@ -93,7 +93,7 @@ public class PaintingDescriptionManager : MonoBehaviour
     private void ControllerEvents_ButtonTwoReleased(object sender, ControllerInteractionEventArgs e)
     {
         TextBackground.SetActive(false);
-        if (player_near)
+        if (playerIsNear)
         {
             AvailabilityIcon.SetActive(true);
         }
@@ -114,7 +114,7 @@ public class PaintingDescriptionManager : MonoBehaviour
         // When the player gets close to the painting
         if (other.name.Contains(PLAYER_TAG))
         {
-            player_near = true;
+            playerIsNear = true;
             AvailabilityIcon.SetActive(true);
         }
     }
@@ -124,7 +124,7 @@ public class PaintingDescriptionManager : MonoBehaviour
         // When the player gets far from the painting
         if (other.name.Contains(PLAYER_TAG))
         {
-            player_near = false;
+            playerIsNear = false;
             AvailabilityIcon.SetActive(false);
             TextBackground.SetActive(false);
         }
