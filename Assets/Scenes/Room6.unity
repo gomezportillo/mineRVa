@@ -2075,7 +2075,7 @@ MonoBehaviour:
   LightRed: {fileID: 2100000, guid: 72520423a7df5144e87e855ebf6391eb, type: 2}
   LightGreen: {fileID: 2100000, guid: 5bace6255cc84a34fa19e5b5a45634d0, type: 2}
   LightYellow: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
-  SnapDropZones:
+  snapDropZones:
   - {fileID: 447986451}
   - {fileID: 1980849878}
   - {fileID: 166949757}
@@ -5461,11 +5461,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExitDoor: {fileID: 179109980}
   dialogManagerHolder: {fileID: 314158049}
-  PaintingCheckers:
-  - {fileID: 830213088}
+  paintingCheckers:
   - {fileID: 877762048}
   - {fileID: 531721896}
   - {fileID: 192794701}
+  - {fileID: 830213088}
 --- !u!82 &305825023
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8127,7 +8127,7 @@ MonoBehaviour:
   LightRed: {fileID: 2100000, guid: 72520423a7df5144e87e855ebf6391eb, type: 2}
   LightGreen: {fileID: 2100000, guid: 5bace6255cc84a34fa19e5b5a45634d0, type: 2}
   LightYellow: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
-  SnapDropZones:
+  snapDropZones:
   - {fileID: 26248517}
   - {fileID: 1491612370}
   - {fileID: 74218626}
@@ -10485,7 +10485,7 @@ MonoBehaviour:
   LightRed: {fileID: 2100000, guid: 72520423a7df5144e87e855ebf6391eb, type: 2}
   LightGreen: {fileID: 2100000, guid: 5bace6255cc84a34fa19e5b5a45634d0, type: 2}
   LightYellow: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
-  SnapDropZones:
+  snapDropZones:
   - {fileID: 395683995}
   - {fileID: 793989469}
   - {fileID: 1662531474}
@@ -10842,7 +10842,7 @@ MonoBehaviour:
   LightRed: {fileID: 2100000, guid: 72520423a7df5144e87e855ebf6391eb, type: 2}
   LightGreen: {fileID: 2100000, guid: 5bace6255cc84a34fa19e5b5a45634d0, type: 2}
   LightYellow: {fileID: 2100000, guid: d92f9080b2c956441a4f8f897bb00073, type: 2}
-  SnapDropZones:
+  snapDropZones:
   - {fileID: 1164400541}
   - {fileID: 1674942706}
   - {fileID: 1406564675}
@@ -14714,7 +14714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f84e1b36febea4d848939e97f4d7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManagerHolder: {fileID: 1011019562}
+  gameManagerHolder: {fileID: 305825021}
 --- !u!135 &1538496024
 SphereCollider:
   m_ObjectHideFlags: 0
