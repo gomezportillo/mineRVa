@@ -1,13 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using VRTK;
 
 public class TrashDetector : MonoBehaviour
 {
-    public GameObject door;
+    public GameObject exitDoor;
     public GameObject dialogManagerHolder;
+    public VRTK_SnapDropZone[] snapDropZones;
 
     private DialogManager dialogManagerScript;
     private DoorTeletransporter doorTeletransporterScript;
-    private readonly string TAG_NAME = "Trash";
+    private readonly string TRASH_TAG = "Trash";
 
     private readonly int MAX_TRASH = 4;
     private int trashCounter = 0;
@@ -19,19 +22,34 @@ public class TrashDetector : MonoBehaviour
             dialogManagerScript = dialogManagerHolder.GetComponent<DialogManager>();
         }
 
-        if (door != null)
+        if (exitDoor != null)
         {
-            doorTeletransporterScript = door.GetComponent<DoorTeletransporter>();
+            doorTeletransporterScript = exitDoor.GetComponent<DoorTeletransporter>();
             if (doorTeletransporterScript != null)
             {
                 doorTeletransporterScript.Disable();
             }
         }
+
+        foreach (VRTK_SnapDropZone sdz in snapDropZones)
+        {
+            sdz.ObjectSnappedToDropZone += OnTrashSnapped;
+            sdz.ObjectUnsnappedFromDropZone += OnTrashUnsnapped;
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnDestroy()
     {
-        if (other.tag == TAG_NAME)
+        foreach (VRTK_SnapDropZone sdz in snapDropZones)
+        {
+            sdz.ObjectSnappedToDropZone -= OnTrashSnapped;
+            sdz.ObjectUnsnappedFromDropZone -= OnTrashUnsnapped;
+        }
+    }
+
+    internal void OnTrashSnapped(object sender, SnapDropZoneEventArgs e)
+    {
+        if (e.snappedObject.tag == TRASH_TAG)
         {
             Debug.Log("+1 trash");
             trashCounter++;
@@ -44,9 +62,9 @@ public class TrashDetector : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTrashUnsnapped(object sender, SnapDropZoneEventArgs e)
     {
-        if (other.tag == TAG_NAME)
+        if (e.snappedObject.tag == TRASH_TAG)
         {
             trashCounter--;
         }
