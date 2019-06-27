@@ -3961,7 +3961,7 @@ MonoBehaviour:
   - {fileID: 756046211}
   - {fileID: 756046220}
   - {fileID: 756046217}
-  MaxShoots: 1
+  MaxShoots: 10
   dialogManagerHolder: {fileID: 1573218095}
   exitDoor: {fileID: 756046177}
 --- !u!114 &756046239

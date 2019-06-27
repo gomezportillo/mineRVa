@@ -18,7 +18,7 @@ public class PaintingColliderDetector : MonoBehaviour
     public Material PaintingMaterial;
     public Material FrameMaterial;
 
-    private readonly string TAG_NAME = "Arrow";
+    private readonly string ARROW_TAG = "Arrow";
     private readonly float FadingInDuration = 2.0f;
     private readonly float FadingOutDuration = 1.5f;
 
@@ -79,7 +79,7 @@ public class PaintingColliderDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (state != PaintingState.Disabled && other.tag == TAG_NAME)
+        if (state != PaintingState.Disabled && other.tag == ARROW_TAG)
         {
             Debug.Log("Arrow dectected!");
             gameManagerScript.AnnounceDetectedArrow(this.name);

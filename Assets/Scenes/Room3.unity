@@ -10277,7 +10277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb040e6497a62ff418f4848658a14fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 1239154989}
+  exitDoor: {fileID: 1239154989}
   dialogManagerHolder: {fileID: 2105243146}
   snapDropZones:
   - {fileID: 1632812175}

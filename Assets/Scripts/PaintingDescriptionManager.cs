@@ -57,7 +57,7 @@ public class PaintingDescriptionManager : MonoBehaviour
         }
     }
 
-    // REF. // REF. https://www.youtube.com/watch?v=W9mub3CvTvQ
+    // REF. https://www.youtube.com/watch?v=W9mub3CvTvQ
     // REF. https://www.tangledrealitystudios.com/development-tips/awake-vs-start-vs-onenable-and-when-to-use-them/
     private void OnEnable()
     {
