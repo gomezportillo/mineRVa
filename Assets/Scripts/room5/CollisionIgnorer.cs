@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
-public class IgnoreCollision : MonoBehaviour
+public class CollisionIgnorer : MonoBehaviour
 {
-    public Transform IgnoreWith;
+    public GameObject ignoredObject;
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == IgnoreWith.name)
+        if (collision.gameObject.name == ignoredObject.name)
         {
             Physics.IgnoreCollision(collision.collider, GetComponent<Collider>());
         }

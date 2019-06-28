@@ -3,16 +3,16 @@ using VRTK;
 
 public class KeyDetector : MonoBehaviour
 {
-    public GameObject Door;
+    public GameObject exitDoor;
     public string KEY_TAG;
 
     private DoorTeletransporter doorTeletransporterScript;
 
     private void Start()
     {
-        if (Door != null)
+        if (exitDoor != null)
         {
-            doorTeletransporterScript = Door.GetComponent<DoorTeletransporter>();
+            doorTeletransporterScript = exitDoor.GetComponent<DoorTeletransporter>();
             if (doorTeletransporterScript != null)
             {
                 doorTeletransporterScript.Disable();
