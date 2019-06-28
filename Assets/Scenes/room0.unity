@@ -2047,6 +2047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shadow_plane
       objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 400016, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2219,10 +2223,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
-    - target: {fileID: 400012, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: bc1e01646133c7e45a3aba4c8db540f9, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2283,6 +2283,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.310609, y: 38.09655, z: 3.1203744}
   m_Center: {x: 0.002213001, y: 12.98529, z: 10.199084}
+--- !u!4 &582799687 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400032, guid: bc1e01646133c7e45a3aba4c8db540f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 582799683}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &604969931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2852,6 +2858,100 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &689863634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 689863635}
+  - component: {fileID: 689863638}
+  - component: {fileID: 689863637}
+  - component: {fileID: 689863636}
+  m_Layer: 0
+  m_Name: LockIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &689863635
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689863634}
+  m_LocalRotation: {x: 0.00008709646, y: -0.7071068, z: -0.7071068, w: 0.00008709646}
+  m_LocalPosition: {x: 0, y: 0, z: 4.25}
+  m_LocalScale: {x: 1.2000005, y: 1.5000004, z: 1}
+  m_Children: []
+  m_Father: {fileID: 582799687}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -179.98601, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0030000089, y: -4.733}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &689863636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689863634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 2800000, guid: 6fdec4dee4ab0c047a632e647cec5db5, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &689863637
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689863634}
+  m_CullTransparentMesh: 0
+--- !u!223 &689863638
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689863634}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &786918256
 GameObject:
   m_ObjectHideFlags: 0
