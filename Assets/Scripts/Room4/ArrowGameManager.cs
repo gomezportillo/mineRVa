@@ -92,9 +92,9 @@ public class ArrowGameManager : MonoBehaviour
     private void Win()
     {
         // make all painting blink yellow
-        for (int i = 0; i < painting_scripts.Length; i++)
+        foreach (PaintingColliderDetector pcd in painting_scripts)
         {
-            painting_scripts[i].Win();
+            pcd.Win();
         }
 
         if (doorTeletransporterScript != null)
