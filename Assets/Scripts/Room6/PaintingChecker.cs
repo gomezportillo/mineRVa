@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using VRTK;
 using System.Text.RegularExpressions;
+using System;
 
 // This classs gets informed when a piece is placed and checks if it is correct.
 // Then, turns the light accordingly and informs the game manager
@@ -23,7 +24,7 @@ public class PaintingChecker : MonoBehaviour
     private PaintingPiecesGameManager gameManagerScript;
     public VRTK_SnapDropZone[] snapDropZones;
 
-    private readonly int MAX_PIECES = 4;
+    private int MAX_PIECES;
 
     void Awake()
     {
@@ -47,6 +48,7 @@ public class PaintingChecker : MonoBehaviour
             sdz.ObjectUnsnappedFromDropZone += OnPieceUnsnapped;
         }
 
+        MAX_PIECES = snapDropZones.Length;
         selfName = this.name.Split('_')[1].ToLower();
     }
 
@@ -65,32 +67,20 @@ public class PaintingChecker : MonoBehaviour
         {
             currentPieces++;
 
-            string piece_name = e.snappedObject.name.Split('_')[0].ToLower();
-            string sdz_number = Regex.Match(sender.ToString(), @"\d+").Value;
-            string snapped_number = Regex.Match(e.snappedObject.name, @"\d+").Value;
+            string objectName = e.snappedObject.name;
+            string zoneName = sender.ToString();
 
-            Debug.Log("Snapped piece #" + snapped_number + " in SDZ #" + sdz_number);
-
-            bool correct = (piece_name == selfName) && (sdz_number == snapped_number);
-            if (correct)
+            if (PieceIsCorrect(objectName, zoneName))
             {
                 correctPieces++;
                 if (correctPieces == MAX_PIECES)
                 {
-                    ChangeBulbColor(LightGreen);
                     isCorrectlyFinished = true;
-                    gameManagerScript.PaintingFinished();
 
-                    // locking pieces in place disabling its box colliders
-                    foreach (VRTK_SnapDropZone sdz in snapDropZones)
-                    {
-                        GameObject piece = sdz.GetCurrentSnappedObject();
-                        if (piece != null)
-                        {
-                            piece.GetComponent<BoxCollider>().enabled = false;
-                            piece.transform.GetChild(0).GetComponent<BoxCollider>().enabled = false;
-                        }
-                    }
+                    ChangeBulbColor(LightGreen);
+                    LockAllPiecesInPlace();
+
+                    gameManagerScript.PaintingFinished();
                 }
             }
 
@@ -107,14 +97,10 @@ public class PaintingChecker : MonoBehaviour
         {
             currentPieces--;
 
-            string piece_name = e.snappedObject.name.Split('_')[0].ToLower();
-            string sdz_number = Regex.Match(sender.ToString(), @"\d+").Value;
-            string snapped_number = Regex.Match(e.snappedObject.name, @"\d+").Value;
+            string objectName = e.snappedObject.name;
+            string zoneName = sender.ToString();
 
-            Debug.Log("Unsnapped piece #" + snapped_number + " in SDZ #" + sdz_number);
-
-            bool correct = (piece_name == selfName) && (sdz_number == snapped_number);
-            if (correct)
+            if (PieceIsCorrect(objectName, zoneName))
             {
                 correctPieces--;
             }
@@ -122,6 +108,12 @@ public class PaintingChecker : MonoBehaviour
             // In case the light was red
             ChangeBulbColor(LightYellow);
         }
+    }
+
+
+    public void TurnOnLight()
+    {
+        ChangeBulbColor(LightYellow);
     }
 
     private void ChangeBulbColor(Material m)
@@ -146,8 +138,31 @@ public class PaintingChecker : MonoBehaviour
         }
     }
 
-    public void TurnOnLight()
+    private void LockAllPiecesInPlace()
     {
-        ChangeBulbColor(LightYellow);
+        // locking pieces in place disabling its box colliders
+        foreach (VRTK_SnapDropZone sdz in snapDropZones)
+        {
+            GameObject piece = sdz.GetCurrentSnappedObject();
+            if (piece != null)
+            {
+                piece.GetComponent<BoxCollider>().enabled = false;
+                piece.transform.GetChild(0).GetComponent<BoxCollider>().enabled = false;
+            }
+        }
+    }
+
+    private bool PieceIsCorrect(string objectName, string zoneName)
+    {
+        string piece_name = objectName.Split('_')[0].ToLower();
+        string sdz_number = Regex.Match(zoneName, @"\d+").Value;
+        string snapped_number = Regex.Match(objectName, @"\d+").Value;
+
+        Debug.Log("Unsnapped piece #" + snapped_number + " in SDZ #" + sdz_number);
+
+        bool correctPainting = piece_name == selfName;
+        bool correctPosition = sdz_number == snapped_number;
+
+        return correctPainting && correctPosition;
     }
 }

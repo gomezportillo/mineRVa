@@ -9,7 +9,7 @@ public class PaintingPiecesGameManager : MonoBehaviour
     private int currentFinishedPaintings;
     public GameObject[] paintingCheckers;
 
-    private readonly int MAX_PAINTINGS = 4;
+    private int MAX_PAINTINGS;
     private DoorTeletransporter doorTeletransporterScript;
 
     void Awake()
@@ -28,6 +28,7 @@ public class PaintingPiecesGameManager : MonoBehaviour
             }
         }
 
+        MAX_PAINTINGS = paintingCheckers.Length;
         currentFinishedPaintings = 0;
     }
 
