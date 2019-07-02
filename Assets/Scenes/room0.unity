@@ -859,7 +859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogCollider: {fileID: 673403177}
   dialogBackground: {fileID: 1999763403}
-  timeToDelay: 4
+  timeToDelay: 5
 --- !u!114 &208549459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 395e27ffad7dc2e4f97d9096281213ec, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2592,9 +2592,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 825935626}
   - {fileID: 1740362672}
   - {fileID: 1715465057}
-  - {fileID: 825935626}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &662694445

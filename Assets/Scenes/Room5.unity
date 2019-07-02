@@ -9554,9 +9554,9 @@ MonoBehaviour:
   autoManageVRSettings: 1
   autoLoadSetup: 1
   setups:
+  - {fileID: 50975760}
   - {fileID: 161603553}
   - {fileID: 1620948547}
-  - {fileID: 50975760}
   excludeTargetGroups: 1a0000001b000000
   persistOnLoad: 0
 --- !u!4 &696577155
@@ -16230,7 +16230,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 661d68377f5b8c64597a98b37ce12e92, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

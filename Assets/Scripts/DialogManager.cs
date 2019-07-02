@@ -270,15 +270,15 @@ public class DialogManager : MonoBehaviour
 
             if (dialog.ToLower().Contains("ring"))
             {
-                audioSource.PlayOneShot(ringSound, 0.05f);
+                audioSource.PlayOneShot(ringSound, 0.6f);
             }
             else if (RoomName == "room0" || RoomName == "room8")
             {
-                audioSource.GetComponent<AudioSource>().PlayOneShot(womanVoice, 0.03f);
+                audioSource.GetComponent<AudioSource>().PlayOneShot(womanVoice, 0.4f);
             }
             else
             {
-                audioSource.GetComponent<AudioSource>().PlayOneShot(manVoice, 0.04f);
+                audioSource.GetComponent<AudioSource>().PlayOneShot(manVoice, 0.5f);
             }
         }
     }

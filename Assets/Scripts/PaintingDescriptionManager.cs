@@ -105,7 +105,7 @@ public class PaintingDescriptionManager : MonoBehaviour
         if (audioSource)
         {
             audioSource.Stop();
-            audioSource.PlayOneShot(soundEffect, 0.2f);
+            audioSource.PlayOneShot(soundEffect);
         }
     }
 
