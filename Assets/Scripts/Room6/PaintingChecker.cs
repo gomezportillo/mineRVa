@@ -118,16 +118,13 @@ public class PaintingChecker : MonoBehaviour
 
     private void ChangeBulbColor(Material m)
     {
-        if (!isCorrectlyFinished)
+        if (m != null)
         {
             if (Bulb != null)
             {
-                if (m != null)
-                {
                     Material[] mats = Bulb.GetComponent<Renderer>().materials;
                     mats[2] = m;
                     Bulb.GetComponent<Renderer>().materials = mats;
-                }
             }
 
             if (Light != null)
@@ -157,8 +154,6 @@ public class PaintingChecker : MonoBehaviour
         string piece_name = objectName.Split('_')[0].ToLower();
         string sdz_number = Regex.Match(zoneName, @"\d+").Value;
         string snapped_number = Regex.Match(objectName, @"\d+").Value;
-
-        Debug.Log("Unsnapped piece #" + snapped_number + " in SDZ #" + sdz_number);
 
         bool correctPainting = piece_name == selfName;
         bool correctPosition = sdz_number == snapped_number;
