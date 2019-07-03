@@ -3944,6 +3944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room2
   descriptionFile: jardin_abierto.txt
   rightControllerEvents: {fileID: 497550146}
@@ -4360,6 +4361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room2
   descriptionFile: descendimiento.txt
   rightControllerEvents: {fileID: 497550146}
@@ -6264,6 +6266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room2
   descriptionFile: jardin_cerrado.txt
   rightControllerEvents: {fileID: 497550146}
@@ -7492,6 +7495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room2
   descriptionFile: matrimonio.txt
   rightControllerEvents: {fileID: 497550146}
@@ -8802,6 +8806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4176565a4c0b85242a77a58ef6635424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   RoomName: room2
   TimeBetweetLetters: 0.05
   rightControllerEvents: {fileID: 497550146}
@@ -9352,7 +9357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

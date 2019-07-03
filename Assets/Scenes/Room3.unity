@@ -189,6 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room3
   descriptionFile: moises.txt
   rightControllerEvents: {fileID: 183069664}
@@ -1979,7 +1980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 8abad25623332e04b80f2fa5dafa9b12, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2721,6 +2722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room3
   descriptionFile: adan.txt
   rightControllerEvents: {fileID: 183069664}
@@ -3966,7 +3968,7 @@ Transform:
   - {fileID: 1707400470}
   - {fileID: 1363772323}
   m_Father: {fileID: 377369523}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &924654627
 GameObject:
@@ -4630,6 +4632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room3
   descriptionFile: atenas.txt
   rightControllerEvents: {fileID: 183069664}
@@ -5594,7 +5597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -5622,11 +5625,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5738,7 +5741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_RootOrder
@@ -5890,7 +5893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002da641889e20b4cbe49be34ba186cf, type: 3}
       propertyPath: m_RootOrder
@@ -8324,6 +8327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room3
   descriptionFile: piedad.txt
   rightControllerEvents: {fileID: 183069664}
@@ -8802,7 +8806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4000013912359922, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9705,6 +9709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room3
   descriptionFile: cena.txt
   rightControllerEvents: {fileID: 183069664}
@@ -10700,6 +10705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4176565a4c0b85242a77a58ef6635424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   RoomName: room3
   TimeBetweetLetters: 0.05
   rightControllerEvents: {fileID: 183069664}

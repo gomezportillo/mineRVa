@@ -13,8 +13,15 @@ public enum SpeakingState
     FINISHED,
 }
 
+public enum Languajes
+{
+    Spanish,
+}
+
 public class DialogManager : MonoBehaviour
 {
+    public Languajes languaje = Languajes.Spanish;
+
     public string RoomName;
     public float TimeBetweetLetters = 0.05f;
 
@@ -239,7 +246,11 @@ public class DialogManager : MonoBehaviour
 
     private string getDialogFileContent(string file_name)
     {
-        string file_path = BASE_PATH + RoomName + '/' + file_name + ".txt";
+        string file_path = BASE_PATH +
+                           GetFolderFromLanguaje(languaje) +
+                           RoomName + '/' +
+                           file_name + ".txt";
+
         string file_content = null;
 
         if (System.IO.File.Exists(file_path))
@@ -340,6 +351,17 @@ public class DialogManager : MonoBehaviour
                     DoorToUnlock.GetComponent<DoorTeletransporter>().Enable();
                 }
                 break;
+        }
+    }
+
+    private string GetFolderFromLanguaje(Languajes lang)
+    {
+        switch (lang)
+        {
+            case Languajes.Spanish:
+                return "spanish/";
+            default:
+                return null;
         }
     }
 }

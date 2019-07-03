@@ -366,6 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room6
   descriptionFile: tentacion.txt
   rightControllerEvents: {fileID: 1066347109}
@@ -705,6 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room6
   descriptionFile: noche.txt
   rightControllerEvents: {fileID: 1066347109}
@@ -6247,6 +6249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4176565a4c0b85242a77a58ef6635424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   RoomName: room6
   TimeBetweetLetters: 0.05
   rightControllerEvents: {fileID: 1066347109}
@@ -8031,6 +8034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room6
   descriptionFile: grito.txt
   rightControllerEvents: {fileID: 1066347109}
@@ -17004,6 +17008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room6
   descriptionFile: guernica.txt
   rightControllerEvents: {fileID: 1066347109}

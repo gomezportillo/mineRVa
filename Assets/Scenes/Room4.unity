@@ -654,6 +654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room4
   descriptionFile: jose-de-ribera.txt
   rightControllerEvents: {fileID: 1835062243}
@@ -5737,6 +5738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room4
   descriptionFile: mattia-preti.txt
   rightControllerEvents: {fileID: 1835062243}
@@ -6155,6 +6157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room4
   descriptionFile: guido-de-reni.txt
   rightControllerEvents: {fileID: 1835062243}
@@ -7272,6 +7275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4176565a4c0b85242a77a58ef6635424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   RoomName: room4
   TimeBetweetLetters: 0.05
   rightControllerEvents: {fileID: 1835062243}
@@ -8352,6 +8356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26235055afb33b347bfb317070a33c27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   roomFolderName: room4
   descriptionFile: peter-paul-rubens.txt
   rightControllerEvents: {fileID: 1835062243}

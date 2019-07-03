@@ -11,6 +11,8 @@ using TMPro;
 
 public class PaintingDescriptionManager : MonoBehaviour
 {
+    public Languajes languaje = Languajes.Spanish;
+
     public string roomFolderName;
     public string descriptionFile;
 
@@ -42,8 +44,10 @@ public class PaintingDescriptionManager : MonoBehaviour
             TextBackground.SetActive(false);
         }
 
-        // Reads the painting description and stores it on a variable
-        string file_path = BASE_PATH + roomFolderName + '/' + descriptionFile;
+        string file_path = BASE_PATH +
+                           GetFolderFromLanguaje(languaje) +
+                           roomFolderName + '/' + 
+                           descriptionFile;
 
         if (System.IO.File.Exists(file_path) && TextObject != null)
         {
@@ -127,6 +131,17 @@ public class PaintingDescriptionManager : MonoBehaviour
             playerIsNear = false;
             AvailabilityIcon.SetActive(false);
             TextBackground.SetActive(false);
+        }
+    }
+
+    private string GetFolderFromLanguaje(Languajes lang)
+    {
+        switch (lang)
+        {
+            case Languajes.Spanish:
+                return "spanish/";
+            default:
+                return null;
         }
     }
 }

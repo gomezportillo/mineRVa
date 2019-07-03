@@ -2749,6 +2749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4176565a4c0b85242a77a58ef6635424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  languaje: 0
   RoomName: room0
   TimeBetweetLetters: 0.05
   rightControllerEvents: {fileID: 174072134}
