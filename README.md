@@ -1,6 +1,8 @@
-# MieRVa
+# MineRVa
 
 Proyecto para animar a sus usuarios a visitar museos usando VR y técnicas de gamificación. Los vídeos genrados pueden verse a continuación o en la [lista de reproducción](https://www.youtube.com/playlist?list=PLb5boRKcO4iapVxIHKnowO8E2WnaLylcT).
+
+Además, el juego puede ser descargado desde la pestaña _releases_ o directamente a través del siguiente [link de descarga](https://github.com/gomezportillo/mineRVa/releases/download/v1.0/MineRVa.zip).
 
 ## Trailer
 
