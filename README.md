@@ -1,6 +1,14 @@
 # MieRVa
 
-Proyecto para animar a sus usuarios a visitar museos usando VR y técnicas de gamificación.
+Proyecto para animar a sus usuarios a visitar museos usando VR y técnicas de gamificación. Los vídeos genrados pueden verse a continuación o en la [lista de reproducción](https://www.youtube.com/playlist?list=PLb5boRKcO4iapVxIHKnowO8E2WnaLylcT).
+
+## Trailer
+
+[![Trailer](https://img.youtube.com/vi/sYCLIU3ZRdw/0.jpg)](https://www.youtube.com/watch?v=sYCLIU3ZRdw)
+
+## Juego completo
+
+[![Full game](https://img.youtube.com/vi/YJHAO7s5M0k/0.jpg)](https://www.youtube.com/watch?v=YJHAO7s5M0k)
 
 ## Diario de desarrollo
 
